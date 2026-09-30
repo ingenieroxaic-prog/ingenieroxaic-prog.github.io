@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Doctor Cabecera</title>
+
+ <link rel="stylesheet" href="style.css">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+<style>
+body {
+  background-color: #ffffff ;
+}
+
+</style>
+
+
+<style>
+.contenedor-10 {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center;     /* Centra verticalmente */
+  gap: 10px;  
+  height: 100vh;           /* Opcional: altura total de la pantalla */
+ 
+
+}
+
+
+</style>
+
+<style>
+.contenedor-11 {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center;     /* Centra verticalmente */
+  gap: 10px;  
+  height: 100vh;           /* Opcional: altura total de la pantalla */
+ 
+}
+</style>
+
+
+<style>
+    /* Estilos base (para pantallas grandes) */
+.contenedor-10 {
+  display: flex;
+  flex-direction: row; /* Elementos de izquierda a derecha */
+  flex-wrap: wrap;     /* Permite bajar si no hay espacio */
+  gap: 10px;           /* Separa los elementos para que no se peguen */
+}
+
+.contenedor-10 img {
+  max-width: 100%;     /* Evita que las imágenes se salgan de su contenedor */
+  height: auto;        /* Mantiene la proporción de la imagen */
+  display: block;
+}
+
+/* Regla para pantallas menores a 500px */
+@media (max-width: 500px) {
+  .contenedor-10 {
+    flex-direction: column; /* Todo se alinea en vertical hacia abajo */
+  }
+}
+</style>
+
+
+<style>
+
+    /* Estilos base (para pantallas grandes) */
+.contenedor-11 {
+  display: flex;
+  flex-direction: row; /* Elementos de izquierda a derecha */
+  flex-wrap: wrap;     /* Permite bajar si no hay espacio */
+  gap: 10px;           /* Separa los elementos para que no se peguen */
+}
+
+.contenedor-11 img {
+  max-width: 100%;     /* Evita que las imágenes se salgan de su contenedor */
+  height: auto;        /* Mantiene la proporción de la imagen */
+  display: block;
+}
+
+/* Regla para pantallas menores a 500px */
+@media (max-width: 500px) {
+  .contenedor-11 {
+    flex-direction: column; /* Todo se alinea en vertical hacia abajo */
+  }
+}
+</style>
+
+
+
+
+<style>
+
+  /* Este código solo se activa cuando la pantalla mide 500px o menos */
+@media screen and (max-width: 500px) {
+  
+  /* 1. Contenedor principal: fuerza a los hijos a ponerse en vertical */
+  .contenedor-principal {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Crea una separación limpia entre los bloques para que no se peguen */
+    width: 100%;
+    padding: 10px; /* Evita que el contenido toque los bordes físicos de la pantalla */
+  }
+
+  /* 2. Los bloques internos (divs, secciones, artículos) */
+  .contenedor-principal > div, 
+  .contenedor-principal > section {
+    width: 100%; /* Ocupan todo el ancho disponible */
+    box-sizing: border-box; /* Asegura que el padding no rompa el diseño */
+    float: none; /* Elimina floats antiguos si los tenías, evitando que se crucen */
+  }
+
+  /* 3. Protección para las imágenes: no se desbordan ni se enciman */
+  img {
+    max-width: 100%; /* No se salen de su contenedor */
+    height: auto; /* Mantienen su proporción original sin deformarse */
+    display: block; /* Elimina espacios vacíos inline */
+    margin: 0 auto; /* Las centra si son más pequeñas que el contenedor */
+  }
+}
+</style>
+
+
+<style>
+    header {
+  background-color: #222222;
+  transition: background-color 0.4s ease, transform 0.3s ease;
+}
+
+header:hover {
+  background-color: #ff5722;
+  transform: scale(1.01);
+}
+</style>
+
+
+
+
+
+</head>
+<body>
+ 
+
+
+
+<header>
+    <div class="logo">
+        
+        
+<div class="contenedor">
+  <img src="Imagenes/logoTijuana.png" alt="Ejemplo"   style="width:100px; height:100px; "   >
+</div>
+       
+    </div>
+
+<nav>
+    <ul>
+        <li><a href="Index.html">Inicio</a></li>
+        <li><a href="Bienvenida.html">Bienvenida</a></li>
+        <li><a href="Carta.html">Carta</a></li>
+        <li><a href="Reserva.html">Reserva</a></li>
+        <li><a href="Contacto.html">Contacto</a></li>
+        <li><a href="Política.html">Politica</a></li>
+
+    </ul>
+</nav>
+
+</header>
+
+<br>
+<br>
+<br>
+
+    <div class="container text-center">
+        <h2 class="mb-4 text-secondary">Síguenos en nuestras redes</h2>
+        
+        <!-- Contenedor de Redes Sociales -->
+        <div class="d-flex justify-content-center gap-3">
+            
+            <!-- Facebook -->
+            <a href="https://facebook.com" target="_blank" class="btn btn-social btn-facebook" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+
+            <!-- Instagram -->
+            <a href="https://instagram.com" target="_blank" class="btn btn-social btn-instagram" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+
+            <!-- LinkedIn -->
+            <a href="https://linkedin.com" target="_blank" class="btn btn-social btn-linkedin" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+
+            <!-- Google (Gmail) -->
+            <a href="https://www.google.com/" target="_blank" class="btn btn-social btn-google" aria-label="Google">
+                <i class="fab fa-google"></i>
+            </a>
+
+            <!-- YouTube -->
+            <a href="https://youtube.com" target="_blank" class="btn btn-social btn-youtube" aria-label="YouTube">
+                <i class="fab fa-youtube"></i>
+            </a>
+
+        </div>
+    </div>
+    <div class="contenedor-principal"></div>
+<br>
+<br>
+<br>
+
+
+
+    <style>
+        .marco-foto {
+            width: 300px;
+            height: 300px;
+            border: 5px solid #0d6efd; /* Color y grosor del borde */
+            padding: 10px;             /* Espacio entre el borde y la foto */
+            background-color: #f8f9fa; /* Color de fondo opcional del marco */
+        }
+        .marco-foto img {
+            object-fit: cover;         /* Ajusta la imagen sin deformarla */
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+
+
+    <div class="container d-flex justify-content-center align-items-center vh-100">
+        <!-- Contenedor del marco con clases Bootstrap para centrar y estilizar -->
+        <div class="marco-foto shadow d-flex justify-content-center align-items-center rounded">
+            <img src="Imagenes/entrada1.webp" class="rounded" alt="Foto centrada">
+        </div>
+    </div>
+
+<br>
+<br>
+<br>
+
+<div class="container my-4">
+  <!-- Contenedor principal con borde izquierdo (puedes cambiar 'border-start' por 'border') -->
+  <div class="row align-items-center border-start border-3 border-primary ps-4">
+    
+    <!-- Columna del Texto -->
+    <div class="col-md-8">
+      <h2>Dirección y Gestión</h2>
+      <p>1. Dirección y Gestión
+• Propietario o Gerente General: Tiene la máxima autoridad. Toma las decisiones financieras, administrativas y estratégicas. En locales pequeños, suele ser el mismo dueño.</p>
+    </div>
+    
+    <!-- Columna de la Imagen (Lado Derecho) -->
+    <div class="col-md-4 text-center">
+      <img src="Imagenes/gerente o director.jpg" class="img-fluid rounded" alt="Descripción de la foto"  style="width: 500px; height: 200px;" >
+    </div>
+
+  </div>
+      <button><a href="https://www.youtube.com/results?search_query=direcci%C3%B3n+y+gestion+de+restaurante+mexicano">Ir a YouTube</a></button>
+</div>
+
+<br>
+<br>
+<br>
+<h1>
+
+<p>Pilares de la Gestión de un Restaurante</p>
+<p>Control financiero: Vigila los presupuestos, los costes de los alimentos (escandallos) y los márgenes de beneficio.</p>
+<!-- index.html -->
+<img src="Imagenes/control financiero.jpg" alt="control financiero" id="El financiero"  style="width: 500; height: 250;"  >
+<p>Gestión de equipos: Lidera y motiva al personal de cocina y sala para mantener un buen ambiente de trabajo.</p> 
+<!-- index.html -->
+<img src="Imagenes/agestion-de-equipos.jpg" alt="gestión de equipos" id="equipos"   style="width: 500; height: 250;" >
+<p>Operaciones diarias: Supervisa el inventario, las compras a proveedores y la seguridad alimentaria (normas APPCC).</p>
+<!-- index.html -->
+<img src="Imagenes/operaciones.jpg" alt="operaciones diarias de gerente" id="operaciones"   style="width: 500; height: 250;" >
+<p>Experiencia del cliente: Cuida la atención en sala, la calidad del servicio y la atmósfera del local.</p>
+<!-- index.html -->
+<img src="Imagenes/experiencia-de-cliente.jpg" alt="experiencia del cliente" id="cliente"   style="width: 500; height: 250;" >
+<p>Marketing y tecnología: Usa herramientas digitales, redes sociales y programas de reservas para atraer y retener clientes.</p>
+<!-- index.html -->
+<img src="Imagenes/marketing.jpg" alt="marketing y technologia" id="marketing"   style="width: 500; height: 250;" >
+
+</h1>
+
+
+
+
+<br>
+<br>
+<br>
+<div class="contenedor-10">
+
+    <!-- CONTENEDOR DEL MARCO CON BORDE -->
+    <!-- border-primary le da un color azul al borde. shadow-sm añade una sombra suave -->
+    <div class="card tarjeta-producto border border-primary border-2 shadow-sm" style="width: 18rem;">
+        
+        <!-- IMAGEN DEL PRODUCTO -->
+        <!-- img-fluid hace la imagen responsiva y card-img-top la adapta a la parte superior -->
+        <img src="Imagenes/tacos1.jpg"  style="height: 200px; width: 200px;"   class="card-img-top img-fluid" alt="Imagen del producto">
+        
+        <!-- CUERPO DE LA TARJETA -->
+        <div class="card-body text-center">
+            <!-- NOMBRE DEL PRODUCTO -->
+            <h5 class="card-title text-dark fw-bold" id="nombreProducto">Tacos al Pastor</h5>
+            
+            <!-- PRECIO DEL PRODUCTO -->
+            <!-- text-success le da un color verde al precio -->
+            <p class="card-text text-success fs-4 fw-semibold" id="precioProducto">€ 7.00</p>
+            
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+  <path d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0z"/>
+  <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+</svg>
+
+
+            <!-- BOTÓN DE ACCIÓN -->
+            <button class="btn btn-primary w-100" onclick="comprarProducto()">Comprar</button>
+        </div>
+    </div>
+
+   
+<br>
+<br>
+<br>
+
+
+    <!-- CONTENEDOR DEL MARCO CON BORDE -->
+    <!-- border-primary le da un color azul al borde. shadow-sm añade una sombra suave -->
+    <div class="card tarjeta-producto border border-primary border-2 shadow-sm" style="width: 18rem;">
+        
+        <!-- IMAGEN DEL PRODUCTO -->
+        <!-- img-fluid hace la imagen responsiva y card-img-top la adapta a la parte superior -->
+        <img src="Imagenes/burritos1.jpg" style="height: 200px; width: 200px;"  class="card-img-top img-fluid" alt="Imagen del producto">
+        
+        <!-- CUERPO DE LA TARJETA -->
+        <div class="card-body text-center">
+            <!-- NOMBRE DEL PRODUCTO -->
+            <h5 class="card-title text-dark fw-bold" id="nombreProducto">Burrito Mexicano</h5>
+            
+            <!-- PRECIO DEL PRODUCTO -->
+            <!-- text-success le da un color verde al precio -->
+            <p class="card-text text-success fs-4 fw-semibold" id="precioProducto">€ 14.00</p>
+            
+
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+  <path d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0z"/>
+  <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+</svg>
+
+
+            <!-- BOTÓN DE ACCIÓN -->
+            <button class="btn btn-primary w-100" onclick="comprarProducto()">Comprar</button>
+        </div>
+    </div>
+
+    
+<br>
+<br>
+<br>
+
+
+
+    <!-- CONTENEDOR DEL MARCO CON BORDE -->
+    <!-- border-primary le da un color azul al borde. shadow-sm añade una sombra suave -->
+    <div class="card tarjeta-producto border border-primary border-2 shadow-sm" style="width: 18rem;">
+        
+        <!-- IMAGEN DEL PRODUCTO -->
+        <!-- img-fluid hace la imagen responsiva y card-img-top la adapta a la parte superior -->
+        <img src="Imagenes/nachos1.jpg" style="height: 200px; width: 200px;"  class="card-img-top img-fluid" alt="Imagen del producto">
+        
+        <!-- CUERPO DE LA TARJETA -->
+        <div class="card-body text-center">
+            <!-- NOMBRE DEL PRODUCTO -->
+            <h5 class="card-title text-dark fw-bold" id="nombreProducto">Nachos Mexicanos </h5>
+            
+            <!-- PRECIO DEL PRODUCTO -->
+            <!-- text-success le da un color verde al precio -->
+            <p class="card-text text-success fs-4 fw-semibold" id="precioProducto">€ 6.50</p>
+            
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+  <path d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0z"/>
+  <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+</svg>
+
+
+
+            <!-- BOTÓN DE ACCIÓN -->
+            <button class="btn btn-primary w-100" onclick="comprarProducto()">Comprar</button>
+        </div>
+    </div>
+
+   
+<br>
+<br>
+<br>
+  <!-- CSS Personalizado para ajustes extras si lo deseas -->
+   
+
+    <!-- CONTENEDOR DEL MARCO CON BORDE -->
+    <!-- border-primary le da un color azul al borde. shadow-sm añade una sombra suave -->
+    <div class="card tarjeta-producto border border-primary border-2 shadow-sm" style="width: 18rem;">
+        
+        <!-- IMAGEN DEL PRODUCTO -->
+        <!-- img-fluid hace la imagen responsiva y card-img-top la adapta a la parte superior -->
+        <img src="Imagenes/quesadilla5.jpg" style="height: 200px; width: 200px;" class="card-img-top img-fluid" alt="Imagen del producto">
+        
+        <!-- CUERPO DE LA TARJETA -->
+        <div class="card-body text-center">
+            <!-- NOMBRE DEL PRODUCTO -->
+            <h5 class="card-title text-dark fw-bold" id="nombreProducto">Quesadilla Mexicana </h5>
+            
+            <!-- PRECIO DEL PRODUCTO -->
+            <!-- text-success le da un color verde al precio -->
+            <p class="card-text text-success fs-4 fw-semibold" id="precioProducto">€ 5.00</p>
+            
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+  <path d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0z"/>
+  <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+</svg>
+
+
+
+
+            <!-- BOTÓN DE ACCIÓN -->
+            <button class="btn btn-primary w-100" onclick="comprarProducto()">Comprar</button>
+        </div>
+    </div>
+
+  </div> 
+
+  <br>
+ <br>
+ <br>
+
+<div class="contenedor-11">
+    <!-- Contenedor de la tarjeta con ancho controlado -->
+    <div class="card" style="width: 18rem;">
+        <!-- Imagen del producto -->
+        <img src="Imagenes/Agua.jpg" style="height: 200px; width: 200px;"  class="card-img-top" alt="Nombre del Producto">
+        
+        <!-- Cuerpo de la tarjeta (Contenido interno) -->
+        <div class="card-body text-center">
+            <!-- Nombre del producto -->
+            <h5 class="card-title text-dark fw-bold">Agua
+            </h5>
+            
+            <!-- Precio del producto -->
+            <p class="card-text text-success fs-5 fw-semibold">€ 2.99</p>
+            
+            <!-- Botón opcional de acción -->
+            <a href="https://lasrosasdeguadalupe.es/" class="btn btn-primary w-100">Comprar</a>
+        </div>
+    </div>
+<br>
+
+    <!-- Contenedor de la tarjeta con ancho controlado -->
+    <div class="card" style="width: 18rem;">
+        <!-- Imagen del producto -->
+        <img src="Imagenes/pepsi1.png" style="height: 200px; width: 200px;"  class="card-img-top" alt="Nombre del Producto">
+        
+        <!-- Cuerpo de la tarjeta (Contenido interno) -->
+        <div class="card-body text-center">
+            <!-- Nombre del producto -->
+            <h5 class="card-title text-dark fw-bold">PEPSI</h5>
+            
+            <!-- Precio del producto -->
+            <p class="card-text text-success fs-5 fw-semibold">€ 2.00</p>
+            
+            <!-- Botón opcional de acción -->
+            <a href="https://www.gastrobarsabores.com/?utm_source=google&utm_medium=GMB&utm_campaign=SaboresValladolid_GMB&gad_source=1&gad_campaignid=24026332730&gbraid=0AAAAADnoty6mgVVBfndrlAVAXE1LkMDTx&gclid=Cj4KCQjw8c3VBhCsARItAA_xJ92FIwxw_rrmsIN87xH2YSMGnyRAXPqCKS4bdvXxL0CH3y0j2WcxBw11GgIgBxAC8P8HAQ" class="btn btn-primary w-100">Comprar</a>
+        </div>
+    </div>
+<br>
+
+
+    <!-- Contenedor de la tarjeta con ancho controlado -->
+    <div class="card" style="width: 18rem;">
+        <!-- Imagen del producto -->
+        <img src="Imagenes/coca-cola.webp" style="height: 200px; width: 100px;"  class="card-img-top" alt="Nombre del Producto">
+        
+        <!-- Cuerpo de la tarjeta (Contenido interno) -->
+        <div class="card-body text-center">
+            <!-- Nombre del producto -->
+            <h5 class="card-title text-dark fw-bold">COCA-COLA</h5>
+            
+            <!-- Precio del producto -->
+            <p class="card-text text-success fs-5 fw-semibold">€ 2.00</p>
+            
+            <!-- Botón opcional de acción -->
+            <a href="https://shop.mamataco.es/" class="btn btn-primary w-100">Comprar</a>
+        </div>
+    </div>
+<br>
+
+    <!-- Contenedor de la tarjeta con ancho controlado -->
+    <div class="card" style="width: 18rem;">
+        <!-- Imagen del producto -->
+        <img src="Imagenes/fanta1.webp" style="height: 200px; width: 200px;"  class="card-img-top" alt="Nombre del Producto">
+        
+        <!-- Cuerpo de la tarjeta (Contenido interno) -->
+        <div class="card-body text-center">
+            <!-- Nombre del producto -->
+            <h5 class="card-title text-dark fw-bold">FANTA</h5>
+            
+            <!-- Precio del producto -->
+            <p class="card-text text-success fs-5 fw-semibold">€ 2.00</p>
+            
+            <!-- Botón opcional de acción -->
+            <a href="https://www.tripadvisor.es/Restaurants-g187495-c29-Valladolid_Province_of_Valladolid_Castile_and_Leon.html" class="btn btn-primary w-100">Comprar</a>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+ <br>
+ <br>
+ <br>
+ 
+   <style>
+        body { background-color: #f8f9fa; }
+        .product-card { max-width: 350px; margin: 0 auto; }
+        .product-img { height: 250px; object-fit: cover; }
+    </style>
+
+
+<div class="container my-5">
+    <!-- 1. Tarjeta de Producto -->
+    <div class="card product-card shadow-sm mb-5">
+        <!-- Reemplaza la URL por la de tu imagen -->
+        <img src="Imagenes/combo 1.jpg" class="card-img-top product-img" alt="Zapatillas">
+        <div class="card-body text-center">
+            <h5 class="card-title" id="prod-nombre">Combo ¡ A TODA MADRE!</h5>
+            <p class="card-text text-danger fw-bold fs-4" id="prod-precio">\€97.70</p>
+            <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#modalPago">Comprar</button>
+        </div>
+    </div>
+
+    <!-- 2. Tabla de Ventas / Registros -->
+    <div class="card shadow-sm p-4">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <h4 class="m-0">Historial de Ventas</h4>
+            <button id="btnExportar" class="btn btn-success" onclick="exportarTablaCSV()">Exportar a CSV</button>
+        </div>
+        <div class="table-responsive">
+            <table class="table table-striped table-hover" id="tablaVentas">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Producto</th>
+                        <th>Precio</th>
+                        <th>Nombre Cliente</th>
+                        <th>Dirección</th>
+                        <th>Nº Tarjeta (Oculto)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Los datos se insertarán aquí dinámicamente -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+<!-- 3. Ventana Emergente (Modal) con el Formulario de Pago -->
+<div class="modal fade" id="modalPago" tabindex="-1" aria-labelledby="modalPagoLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalPagoLabel">Formulario de Pago</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form id="formPago" onsubmit="procesarPago(event)">
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label class="form-label">Nombre Completo</label>
+                        <input type="text" id="cli-nombre" class="form-control" required placeholder="Gabriel E. Vela">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Dirección de Entrega</label>
+                        <input type="text" id="cli-direccion" class="form-control" required placeholder="Francisco Zarandona, 2, Ciudad">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Número de Tarjeta</label>
+                        <input type="text" id="cli-tarjeta" class="form-control" maxlength="16" pattern="\d{16}" required placeholder="1234567890123456">
+                    </div>
+                    <div class="row">
+                        <div class="col-6 mb-3">
+                            <label class="form-label">Expiración</label>
+                            <input type="text" class="form-control" placeholder="MM/AA" required>
+                        </div>
+                        <div class="col-6 mb-3">
+                            <label class="form-label">CVV</label>
+                            <input type="password" class="form-control" maxlength="3" pattern="\d{3}" required placeholder="123">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="submit" class="btn btn-success">Pagar Ahora</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    // Función para manejar el envío del formulario
+    function procesarPago(event) {
+        event.preventDefault(); // Evita que la página se recargue
+
+        // Obtener los datos del producto y del formulario
+        const producto = document.getElementById('prod-nombre').innerText;
+        const precio = document.getElementById('prod-precio').innerText;
+        const nombre = document.getElementById('cli-nombre').value;
+        const direccion = document.getElementById('cli-direccion').value;
+        const tarjetaFull = document.getElementById('cli-tarjeta').value;
+        
+        // Enmascarar la tarjeta por seguridad (mostrar solo los últimos 4 dígitos)
+        const tarjetaOculta = "**** **** **** " + tarjetaFull.slice(-4);
+
+        // Obtener la tabla e insertar una nueva fila
+        const tabla = document.getElementById('tablaVentas').getElementsByTagName('tbody')[0];
+        const nuevaFila = tabla.insertRow();
+
+        nuevaFila.innerHTML = `
+            <td>${producto}</td>
+            <td>${precio}</td>
+            <td>${nombre}</td>
+            <td>${direccion}</td>
+            <td>${tarjetaOculta}</td>
+        `;
+
+        // Limpiar el formulario y cerrar la ventana flotante (Modal)
+        document.getElementById('formPago').reset();
+        const modalElement = document.getElementById('modalPago');
+        const modalInstance = bootstrap.Modal.getInstance(modalElement);
+        modalInstance.hide();
+
+        alert('¡Pago procesado con éxito y añadido a la tabla!');
+    }
+
+    // Función para descargar los datos de la tabla en formato CSV (Excel)
+    function exportarTablaCSV() {
+        const filas = document.querySelectorAll("#tablaVentas tr");
+        let contenidoCSV = "data:text/csv;charset=utf-8,";
+
+        filas.forEach(fila => {
+            const celdas = fila.querySelectorAll("th, td");
+            const datosFila = Array.from(celdas).map(celda => `"${celda.innerText}"`).join(",");
+            contenidoCSV += datosFila + "\r\n";
+        });
+
+        // Crear enlace temporal de descarga
+        const enlaceCodificado = encodeURI(contenidoCSV);
+        const enlaceDescarga = document.createElement("a");
+        enlaceDescarga.setAttribute("href", enlaceCodificado);
+        enlaceDescarga.setAttribute("download", "historial_ventas.csv");
+        document.body.appendChild(enlaceDescarga);
+
+        enlaceDescarga.click();
+        document.body.removeChild(enlaceDescarga);
+    }
+</script>
+
+<br>
+<br>
+<br>
+
+
+   <style>
+        body { background-color: #f8f9fa; }
+        .product-card { max-width: 350px; margin: 0 auto; }
+        .product-img { height: 250px; object-fit: cover; }
+    </style>
+
+
+<div class="container my-5">
+    <!-- 1. Tarjeta de Producto -->
+    <div class="card product-card shadow-sm mb-5">
+        <!-- Reemplaza la URL por la de tu imagen -->
+        <img src="Imagenes/combo2.webp" class="card-img-top product-img" alt="Zapatillas">
+        <div class="card-body text-center">
+            <h5 class="card-title" id="prod-nombre">Combo ¡ A TODA MADRE!</h5>
+            <p class="card-text text-danger fw-bold fs-4" id="prod-precio">\€41.00</p>
+            <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#modalPago">Comprar</button>
+        </div>
+    </div>
+
+    <!-- 2. Tabla de Ventas / Registros -->
+    <div class="card shadow-sm p-4">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <h4 class="m-0">Historial de Ventas</h4>
+            <button id="btnExportar" class="btn btn-success" onclick="exportarTablaCSV()">Exportar a CSV</button>
+        </div>
+        <div class="table-responsive">
+            <table class="table table-striped table-hover" id="tablaVentas">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Producto</th>
+                        <th>Precio</th>
+                        <th>Nombre Cliente</th>
+                        <th>Dirección</th>
+                        <th>Nº Tarjeta (Oculto)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Los datos se insertarán aquí dinámicamente -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+<!-- 3. Ventana Emergente (Modal) con el Formulario de Pago -->
+<div class="modal fade" id="modalPago" tabindex="-1" aria-labelledby="modalPagoLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalPagoLabel">Formulario de Pago</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form id="formPago" onsubmit="procesarPago(event)">
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label class="form-label">Nombre Completo</label>
+                        <input type="text" id="cli-nombre" class="form-control" required placeholder="Gabriel E. Vela">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Dirección de Entrega</label>
+                        <input type="text" id="cli-direccion" class="form-control" required placeholder="Francisco Zarandona, 2, Ciudad">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Número de Tarjeta</label>
+                        <input type="text" id="cli-tarjeta" class="form-control" maxlength="16" pattern="\d{16}" required placeholder="1234567890123456">
+                    </div>
+                    <div class="row">
+                        <div class="col-6 mb-3">
+                            <label class="form-label">Expiración</label>
+                            <input type="text" class="form-control" placeholder="MM/AA" required>
+                        </div>
+                        <div class="col-6 mb-3">
+                            <label class="form-label">CVV</label>
+                            <input type="password" class="form-control" maxlength="3" pattern="\d{3}" required placeholder="123">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="submit" class="btn btn-success">Pagar Ahora</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    // Función para manejar el envío del formulario
+    function procesarPago(event) {
+        event.preventDefault(); // Evita que la página se recargue
+
+        // Obtener los datos del producto y del formulario
+        const producto = document.getElementById('prod-nombre').innerText;
+        const precio = document.getElementById('prod-precio').innerText;
+        const nombre = document.getElementById('cli-nombre').value;
+        const direccion = document.getElementById('cli-direccion').value;
+        const tarjetaFull = document.getElementById('cli-tarjeta').value;
+        
+        // Enmascarar la tarjeta por seguridad (mostrar solo los últimos 4 dígitos)
+        const tarjetaOculta = "**** **** **** " + tarjetaFull.slice(-4);
+
+        // Obtener la tabla e insertar una nueva fila
+        const tabla = document.getElementById('tablaVentas').getElementsByTagName('tbody')[0];
+        const nuevaFila = tabla.insertRow();
+
+        nuevaFila.innerHTML = `
+            <td>${producto}</td>
+            <td>${precio}</td>
+            <td>${nombre}</td>
+            <td>${direccion}</td>
+            <td>${tarjetaOculta}</td>
+        `;
+
+        // Limpiar el formulario y cerrar la ventana flotante (Modal)
+        document.getElementById('formPago').reset();
+        const modalElement = document.getElementById('modalPago');
+        const modalInstance = bootstrap.Modal.getInstance(modalElement);
+        modalInstance.hide();
+
+        alert('¡Pago procesado con éxito y añadido a la tabla!');
+    }
+
+    // Función para descargar los datos de la tabla en formato CSV (Excel)
+    function exportarTablaCSV() {
+        const filas = document.querySelectorAll("#tablaVentas tr");
+        let contenidoCSV = "data:text/csv;charset=utf-8,";
+
+        filas.forEach(fila => {
+            const celdas = fila.querySelectorAll("th, td");
+            const datosFila = Array.from(celdas).map(celda => `"${celda.innerText}"`).join(",");
+            contenidoCSV += datosFila + "\r\n";
+        });
+
+        // Crear enlace temporal de descarga
+        const enlaceCodificado = encodeURI(contenidoCSV);
+        const enlaceDescarga = document.createElement("a");
+        enlaceDescarga.setAttribute("href", enlaceCodificado);
+        enlaceDescarga.setAttribute("download", "historial_ventas.csv");
+        document.body.appendChild(enlaceDescarga);
+
+        enlaceDescarga.click();
+        document.body.removeChild(enlaceDescarga);
+    }
+</script>
+
+<br>
+<br>
+<br>
+
+
+<br>
+<br>
+<br>
+ <style>
+        /* Estilos personalizados para darle un toque mexicano/taquero */
+        .card-promo {
+            border: 2px dashed #ffc107;
+            background-color: #fff9e6;
+        }
+        .text-promo {
+            color: #dc3545;
+            font-weight: bold;
+        }
+    </style>
+
+
+    <div class="container text-center mt-5">
+        <h1 class="mb-4">Restaurante TIJUANA <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-fork-knife" viewBox="0 0 16 16">
+  <path d="M13 .5c0-.276-.226-.506-.498-.465-1.703.257-2.94 2.012-3 8.462a.5.5 0 0 0 .498.5c.56.01 1 .13 1 1.003v5.5a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5zM4.25 0a.25.25 0 0 1 .25.25v5.122a.128.128 0 0 0 .256.006l.233-5.14A.25.25 0 0 1 5.24 0h.522a.25.25 0 0 1 .25.238l.233 5.14a.128.128 0 0 0 .256-.006V.25A.25.25 0 0 1 6.75 0h.29a.5.5 0 0 1 .498.458l.423 5.07a1.69 1.69 0 0 1-1.059 1.711l-.053.022a.92.92 0 0 0-.58.884L6.47 15a.971.971 0 1 1-1.942 0l.202-6.855a.92.92 0 0 0-.58-.884l-.053-.022a1.69 1.69 0 0 1-1.059-1.712L3.462.458A.5.5 0 0 1 3.96 0z"/>
+</svg></h1>
+        
+        <!-- Botón que controla el colapso (nativo de Bootstrap) -->
+        <button class="btn btn-danger btn-lg shadow-sm" type="button" data-bs-toggle="collapse" data-bs-target="#promoDelDia" aria-expanded="false" aria-controls="promoDelDia" id="btnPromo">
+            Ver Promoción del Día
+        </button>
+
+        <!-- Elemento colapsable -->
+        <div class="collapse mt-4" id="promoDelDia">
+            <div class="card card-body mx-auto card-promo shadow" style="max-width: 400px;">
+                <h3 class="card-title text-promo">¡PROMO DE HOY! 🔥</h3>
+                <p class="card-text fs-4 mb-1"><strong>2x1 en Tacos al Pastor</strong></p>
+                <p class="text-muted small">*Válido solo en consumo local durante todo el día.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Script personalizado para cambiar el texto del botón dinámicamente -->
+    <script>
+        const btnPromo = document.getElementById('btnPromo');
+        const promoCollapse = document.getElementById('promoDelDia');
+
+        // Cambia el texto cuando la promoción se muestra
+        promoCollapse.addEventListener('shown.bs.collapse', () => {
+            btnPromo.textContent = 'Ocultar Promoción';
+            btnPromo.classList.replace('btn-danger', 'btn-secondary');
+        });
+
+        // Cambia el texto cuando la promoción se oculta
+        promoCollapse.addEventListener('hidden.bs.collapse', () => {
+            btnPromo.textContent = 'Ver Promoción del Día';
+            btnPromo.classList.replace('btn-secondary', 'btn-danger');
+        });
+    </script>
+
+
+
+<br>
+<br>
+<br>
+
+<style>
+        /* CSS Personalizado opcional para ajustar el borde o espaciados */
+        .contenedor-tarjeta {
+            border: 2px solid #343a40; /* Borde oscuro personalizado */
+            border-radius: 8px;        /* Bordes redondeados */
+            overflow: hidden;          /* Evita que la imagen se salga de las esquinas redondeadas */
+        }
+    </style>
+
+
+    <div class="container">
+        <!-- Contenedor principal con borde y flexbox de Bootstrap -->
+        <div class="row align-items-center contenedor-tarjeta bg-white m-auto" style="max-width: 800px;">
+            
+            <!-- Columna de la Imagen -->
+            <div class="col-md-5 p-0">
+                <img src="Imagenes/tacuba.jpg" class="img-fluid w-100 h-100 object-fit-cover" alt="Imagen de ejemplo">
+            </div>
+            
+            <!-- Columna del Texto (al lado derecho en pantallas medianas/grandes) -->
+            <div class="col-md-7 p-4">
+                <h2 class="card-title mb-3">Café de Tacuba:</h2>
+                <p class="card-text text-muted">
+                    Café de Tacuba: Comenzó en 1912 como una sencilla lechería establecida por Don Dionisio Molinero. El negocio creció cuando empezaron a vender pan y tamales a los clientes que desayunaban ahí. Hoy en día conserva su decoración con azulejos de Talavera y óleos históricos, manteniendo recetas caseras transmitidas por generaciones.
+                </p>
+             
+                <button><a href="https://www.youtube.com/results?search_query=cafe+de+tacuba+mexico">Ir a YouTube</a></button>
+               
+            </div>
+
+        </div>
+    </div>
+
+  
+    <!-- Tu Script personalizado -->
+    <script>
+        // Ejemplo de interactividad con JavaScript
+        document.getElementById('btnAccion').addEventListener('click', function() {
+            alert('¡Hiciste clic en el botón!');
+        });
+    </script>
+
+<br>
+
+
+
+
+
+
+
+
+
+</div>
+<br>
+
+<br>
+<footer class="bg-dark text-light pt-5 pb-4 mt-5" data-bs-theme="dark">
+  <div class="container text-md-left">
+    <div class="row text-md-left">
+      <!-- Columna 1: Info Marca -->
+      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h5 class="text-uppercase mb-4 font-weight-bold text-primary">RESTAURANTE TIJUANA </h5>
+        <p> El restaurante TIJUANA nos brinda una experiencia culinaria y cultural rica en sabores tradicionales</p>
+      </div>
+
+      <!-- Columna 2: Enlaces de interés -->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+        <h5 class="text-uppercase mb-4 font-weight-bold">Productos</h5>
+        <p><a href="Index.html" class="text-secondary text-decoration-none">Inicio</a></p>
+        <p><a href="Bienvenida.html" class="text-secondary text-decoration-none">Bienvenida</a></p>
+         <p><a href="Carta.html" class="text-secondary text-decoration-none">Carta</a></p>
+        <p><a href="Reserva.html" class="text-secondary text-decoration-none">Reserva</a></p>
+        <p><a href="Contacto.html" class="text-secondary text-decoration-none">Contacto</a></p>
+        <p><a href="Política.html" class="text-secondary text-decoration-none">Política</a></p>
+      </div>
+
+      <!-- Columna 3: Contacto -->
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h5 class="text-uppercase mb-4 font-weight-bold">Contacto</h5>
+        <p><i class="bi bi-house-door-fill me-2"></i> Valladolid, ES 47007</p>
+        <p><i class="bi bi-envelope-fill me-2"></i> <a href="mailto:info@ejemplo.com" class="text-secondary text-decoration-none">contacto@restaurantetijuana.com</a></p>
+        <p><i class="bi bi-telephone-fill me-2"></i> <a href="tel:+34900000000" class="text-secondary text-decoration-none">626609321</a></p>
+      </div>
+    </div>
+
+    <hr class="mb-4">
+
+    <!-- Fila Inferior: Copyright -->
+    <div class="row align-items-center">
+      <div class="col-md-7 col-lg-8">
+        <p class="text-md-start text-secondary">&copy; 2026 Todos los derechos reservados por <strong class="text-primary">Gabriel E. Vela Martínez</strong></p>
+      </div>
+    </div>
+  </div>
+</footer>
+<br>
+<br>
+<br>
+
+    <div class="container text-center">
+        <h2 class="mb-4 text-secondary">Síguenos en nuestras redes</h2>
+        
+        <!-- Contenedor de Redes Sociales -->
+        <div class="d-flex justify-content-center gap-3">
+            
+            <!-- Facebook -->
+            <a href="https://facebook.com" target="_blank" class="btn btn-social btn-facebook" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+
+            <!-- Instagram -->
+            <a href="https://instagram.com" target="_blank" class="btn btn-social btn-instagram" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+
+            <!-- LinkedIn -->
+            <a href="https://linkedin.com" target="_blank" class="btn btn-social btn-linkedin" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+
+            <!-- Google (Gmail) -->
+            <a href="https://www.google.com/" target="_blank" class="btn btn-social btn-google" aria-label="Google">
+                <i class="fab fa-google"></i>
+            </a>
+
+            <!-- YouTube -->
+            <a href="https://youtube.com" target="_blank" class="btn btn-social btn-youtube" aria-label="YouTube">
+                <i class="fab fa-youtube"></i>
+            </a>
+
+        </div>
+    </div>
+
+
+
+
+<br>
+
+<br>
+<br>
+
+<footer>
+<h3>&copy; All Right Reserved</h3>
+</footer>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,170 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header,footer{
+    background-color:#000;
+    color: #fff;
+    width: 100%;
+
+}
+
+footer{
+    position: relative;
+    bottom: 0;
+    text-align: center;
+    font-size: 22;
+    padding: 30px 0;
+}
+
+header h2{
+    font-size: 30px;
+
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px; 
+    padding: 0 15px; 
+    text-transform: capitalize;
+}
+
+
+
+/logo/
+
+.contenedor {
+  text-align: center;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+
+
+/imagenes/
+
+.contenedor-imagenes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px; /* Espacio entre imágenes */
+  }
+
+
+  /enlace/
+  a {
+  color: #007bff;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/tacos/
+
+  <!-- CSS Personalizado para ajustes extras si lo deseas -->
+
+        .tarjeta-producto {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        /* Efecto visual opcional al pasar el mouse */
+        .tarjeta-producto:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15) !important;
+        }
+
+
+    /burrito/
+    
+  <!-- CSS Personalizado para ajustes extras si lo deseas -->
+  
+        .tarjeta-producto {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        /* Efecto visual opcional al pasar el mouse */
+        .tarjeta-producto:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15) !important;
+        }
+   
+
+    /nachos/
+    
+  <!-- CSS Personalizado para ajustes extras si lo deseas -->
+   
+        .tarjeta-producto {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        /* Efecto visual opcional al pasar el mouse */
+        .tarjeta-producto:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15) !important;
+        }
+  
+
+    /quesadilla/
+
+        .tarjeta-producto {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        /* Efecto visual opcional al pasar el mouse */
+        .tarjeta-producto:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15) !important;
+        }
+
+
+
+  
+
+
+  /* Este código solo se activa cuando la pantalla mide 500px o menos */
+@media screen and (max-width: 500px) {
+  
+  /* 1. Contenedor principal: fuerza a los hijos a ponerse en vertical */
+  .contenedor-principal {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Crea una separación limpia entre los bloques para que no se peguen */
+    width: 100%;
+    padding: 10px; /* Evita que el contenido toque los bordes físicos de la pantalla */
+  }
+
+  /* 2. Los bloques internos (divs, secciones, artículos) */
+  .contenedor-principal > div, 
+  .contenedor-principal > section {
+    width: 100%; /* Ocupan todo el ancho disponible */
+    box-sizing: border-box; /* Asegura que el padding no rompa el diseño */
+    float: none; /* Elimina floats antiguos si los tenías, evitando que se crucen */
+  }
+
+  /* 3. Protección para las imágenes: no se desbordan ni se enciman */
+  img {
+    max-width: 100%; /* No se salen de su contenedor */
+    height: auto; /* Mantienen su proporción original sin deformarse */
+    display: block; /* Elimina espacios vacíos inline */
+    margin: 0 auto; /* Las centra si son más pequeñas que el contenedor */
+  }
+}
+

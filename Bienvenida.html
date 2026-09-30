@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Doctor Bienvenida</title>
+
+ <link rel="stylesheet" href="style.css">
+
+
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+
+
+<style>
+body {
+  background-color: lightgreen;
+}
+
+</style>
+
+<style>
+
+  /* Este código solo se activa cuando la pantalla mide 500px o menos */
+@media screen and (max-width: 500px) {
+  
+  /* 1. Contenedor principal: fuerza a los hijos a ponerse en vertical */
+  .contenedor-principal {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Crea una separación limpia entre los bloques para que no se peguen */
+    width: 100%;
+    padding: 10px; /* Evita que el contenido toque los bordes físicos de la pantalla */
+  }
+
+  /* 2. Los bloques internos (divs, secciones, artículos) */
+  .contenedor-principal > div, 
+  .contenedor-principal > section {
+    width: 100%; /* Ocupan todo el ancho disponible */
+    box-sizing: border-box; /* Asegura que el padding no rompa el diseño */
+    float: none; /* Elimina floats antiguos si los tenías, evitando que se crucen */
+  }
+
+  /* 3. Protección para las imágenes: no se desbordan ni se enciman */
+  img {
+    max-width: 100%; /* No se salen de su contenedor */
+    height: auto; /* Mantienen su proporción original sin deformarse */
+    display: block; /* Elimina espacios vacíos inline */
+    margin: 0 auto; /* Las centra si son más pequeñas que el contenedor */
+  }
+}
+</style>
+
+<style>
+    header {
+  background-color: #222222;
+  transition: background-color 0.4s ease, transform 0.3s ease;
+}
+
+header:hover {
+  background-color: #ff5722;
+  transform: scale(1.01);
+}
+</style>
+
+
+</head>
+<body>
+ 
+<header>
+    <div class="logo">
+       
+        
+<div class="contenedor">
+  <img src="Imagenes/logoTijuana.png" alt="Ejemplo"   style="width:100px; height:100px; "   >
+</div>
+
+    </div>
+
+<nav>
+    <ul>
+        <li><a href="Index.html">Inicio</a></li>
+        <li><a href="Bienvenida.html">Bienvenida</a></li>
+        <li><a href="Carta.html">Carta</a></li>
+        <li><a href="Reserva.html">Reserva</a></li>
+        <li><a href="Contacto.html">Contacto</a></li>
+        <li><a href="Política.html">Politica</a></li>
+
+    </ul>
+</nav>
+
+</header>
+
+<br>
+<br>
+<br>
+
+
+    <div class="container text-center">
+        <h2 class="mb-4 text-secondary">Síguenos en nuestras redes</h2>
+        
+        <!-- Contenedor de Redes Sociales -->
+        <div class="d-flex justify-content-center gap-3">
+            
+            <!-- Facebook -->
+            <a href="https://facebook.com" target="_blank" class="btn btn-social btn-facebook" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+
+            <!-- Instagram -->
+            <a href="https://instagram.com" target="_blank" class="btn btn-social btn-instagram" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+
+            <!-- LinkedIn -->
+            <a href="https://linkedin.com" target="_blank" class="btn btn-social btn-linkedin" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+
+            <!-- Google (Gmail) -->
+            <a href="https://www.google.com/" target="_blank" class="btn btn-social btn-google" aria-label="Google">
+                <i class="fab fa-google"></i>
+            </a>
+
+            <!-- YouTube -->
+            <a href="https://youtube.com" target="_blank" class="btn btn-social btn-youtube" aria-label="YouTube">
+                <i class="fab fa-youtube"></i>
+            </a>
+
+        </div>
+    </div>
+
+<br>
+<br>
+<br>
+
+ 
+
+
+
+
+
+<br>
+<br>
+<br>
+<div class="contenedor-principal"> 
+<h1>
+
+  "Bienvenidos a TIJUANA, restaurante de sabor puro Mexicano. Este es tú restaurante mí restaurante nuestro restaurante, nuestro México, nuestro pedacito de corazón, esperamos que tu estancia en nuestro restaurante sea muy agradable y descubras cada rincón des power mexicano a través de tus propios sentidos."
+</h1>
+<br>
+<br>
+<br>
+
+   <style>
+        body { background-color: lightgreen; }
+        .product-card { max-width: 350px; margin: 0 auto; }
+        .product-img { height: 250px; object-fit: cover; }
+    </style>
+
+
+<div class="container my-5">
+    <!-- 1. Tarjeta de Producto -->
+    <div class="card product-card shadow-sm mb-5">
+        <!-- Reemplaza la URL por la de tu imagen -->
+        <img src="Imagenes/combo3.png" class="card-img-top product-img" alt="Zapatillas">
+        <div class="card-body text-center">
+            <h5 class="card-title" id="prod-nombre">Combo ¡ A TODA MADRE!</h5>
+            <p class="card-text text-danger fw-bold fs-4" id="prod-precio">\€37.50</p>
+            <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#modalPago">Comprar</button>
+        </div>
+    </div>
+
+    <!-- 2. Tabla de Ventas / Registros -->
+    <div class="card shadow-sm p-4">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <h4 class="m-0">Historial de Ventas</h4>
+            <button id="btnExportar" class="btn btn-success" onclick="exportarTablaCSV()">Exportar a CSV</button>
+        </div>
+        <div class="table-responsive">
+            <table class="table table-striped table-hover" id="tablaVentas">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Producto</th>
+                        <th>Precio</th>
+                        <th>Nombre Cliente</th>
+                        <th>Dirección</th>
+                        <th>Nº Tarjeta (Oculto)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Los datos se insertarán aquí dinámicamente -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+<!-- 3. Ventana Emergente (Modal) con el Formulario de Pago -->
+<div class="modal fade" id="modalPago" tabindex="-1" aria-labelledby="modalPagoLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalPagoLabel">Formulario de Pago</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form id="formPago" onsubmit="procesarPago(event)">
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label class="form-label">Nombre Completo</label>
+                        <input type="text" id="cli-nombre" class="form-control" required placeholder="Gabriel E. Vela">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Dirección de Entrega</label>
+                        <input type="text" id="cli-direccion" class="form-control" required placeholder="Francisco Zarandona, 2, Ciudad">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Número de Tarjeta</label>
+                        <input type="text" id="cli-tarjeta" class="form-control" maxlength="16" pattern="\d{16}" required placeholder="1234567890123456">
+                    </div>
+                    <div class="row">
+                        <div class="col-6 mb-3">
+                            <label class="form-label">Expiración</label>
+                            <input type="text" class="form-control" placeholder="MM/AA" required>
+                        </div>
+                        <div class="col-6 mb-3">
+                            <label class="form-label">CVV</label>
+                            <input type="password" class="form-control" maxlength="3" pattern="\d{3}" required placeholder="123">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="submit" class="btn btn-success">Pagar Ahora</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    // Función para manejar el envío del formulario
+    function procesarPago(event) {
+        event.preventDefault(); // Evita que la página se recargue
+
+        // Obtener los datos del producto y del formulario
+        const producto = document.getElementById('prod-nombre').innerText;
+        const precio = document.getElementById('prod-precio').innerText;
+        const nombre = document.getElementById('cli-nombre').value;
+        const direccion = document.getElementById('cli-direccion').value;
+        const tarjetaFull = document.getElementById('cli-tarjeta').value;
+        
+        // Enmascarar la tarjeta por seguridad (mostrar solo los últimos 4 dígitos)
+        const tarjetaOculta = "**** **** **** " + tarjetaFull.slice(-4);
+
+        // Obtener la tabla e insertar una nueva fila
+        const tabla = document.getElementById('tablaVentas').getElementsByTagName('tbody')[0];
+        const nuevaFila = tabla.insertRow();
+
+        nuevaFila.innerHTML = `
+            <td>${producto}</td>
+            <td>${precio}</td>
+            <td>${nombre}</td>
+            <td>${direccion}</td>
+            <td>${tarjetaOculta}</td>
+        `;
+
+        // Limpiar el formulario y cerrar la ventana flotante (Modal)
+        document.getElementById('formPago').reset();
+        const modalElement = document.getElementById('modalPago');
+        const modalInstance = bootstrap.Modal.getInstance(modalElement);
+        modalInstance.hide();
+
+        alert('¡Pago procesado con éxito y añadido a la tabla!');
+    }
+
+    // Función para descargar los datos de la tabla en formato CSV (Excel)
+    function exportarTablaCSV() {
+        const filas = document.querySelectorAll("#tablaVentas tr");
+        let contenidoCSV = "data:text/csv;charset=utf-8,";
+
+        filas.forEach(fila => {
+            const celdas = fila.querySelectorAll("th, td");
+            const datosFila = Array.from(celdas).map(celda => `"${celda.innerText}"`).join(",");
+            contenidoCSV += datosFila + "\r\n";
+        });
+
+        // Crear enlace temporal de descarga
+        const enlaceCodificado = encodeURI(contenidoCSV);
+        const enlaceDescarga = document.createElement("a");
+        enlaceDescarga.setAttribute("href", enlaceCodificado);
+        enlaceDescarga.setAttribute("download", "historial_ventas.csv");
+        document.body.appendChild(enlaceDescarga);
+
+        enlaceDescarga.click();
+        document.body.removeChild(enlaceDescarga);
+    }
+</script>
+
+
+
+
+
+<br>
+<br>
+<br>
+      <h1><p>  <a href="https://www.youtube.com/watch?v=QDa4q6Zx7kY"> El Ambiente </a> de el restaurante TIJUANA es cálido, vibrante y festivo, diseñado para transmitir la alegría y la riqueza cultural de México. </p> </h1>
+      <br>
+      <br>
+
+      <div class="contenedor-imagenes">
+  <img src="Imagenes/méxico2.jpg" alt="Cálido"  style="width: 400px;  height: 200px;  " >
+  <br>
+  <img src="Imagenes/méxico3.jpg" alt="Vibrante"    style="width: 400px;  height: 200px;  ">
+  <br>
+  <img src="Imagenes/ambiente.jpg" alt="Vibrante"    style="width: 400px;  height: 200px;  ">
+</div>
+      <br>
+      <h1><p> <a href="https://www.youtube.com/watch?v=M5xz6mAdDkU">Decoración y Visuales</a></p>
+        <p>Colores vivos: Predominan tonos intensos como el amarillo, el rojo, el verde y el rosa mexicano en paredes y detalles.</p></h1>
+      <br>
+      <br>
+      <div class="contenedor-imagenes">
+  <img src="Imagenes/méxico15.jpg" alt="Decoración4"  style="width: 400px;  height: 200px;  " >
+  <br>
+  <img src="Imagenes/méxico5.jpg" alt="Visuales5"   style="width: 400px;  height: 200px;  " >
+<br>
+  <img src="Imagenes/visuales.webp" alt="Visuales5"   style="width: 400px;  height: 200px;  " >
+
+</div>
+      <br>
+      <h1><p><a href="https://www.youtube.com/watch?v=EZQbwDy5skg">Artesania Tradicional:</a> Se emplean elementos típicos como el papel picado, la cerámica de talavera, los textiles coloridos y murales temáticos.</p></h1>
+      <br>
+      <br>
+      <div class="contenedor-imagenes">
+  <img src="Imagenes/méxico5.webp" alt="Imagen 1"     style="width: 400px;  height: 200px;  " >
+  <br>
+  <img src="Imagenes/méxico6.jpg" alt="Imagen 2"      style="width: 400px;  height: 200px;  " >
+  <br>
+  <img src="Imagenes/Artesanias.jpg" alt="Imagen 2"      style="width: 400px;  height: 200px;  " >
+</div>
+      <br>
+     <h1> <p> <a href="https://www.youtube.com/watch?v=a94tRgyFv40">Vegetación y calidez:</a> Es común ver cactus, plantas y mobiliario de madera o metal que aportan un toque rústico y acogedor. </p></h1>
+      <br>
+      <br>
+      <div class="contenedor-imagenes">
+  <img src="Imagenes/méxico7.png" alt="Imagen 1"    style="width: 400px;  height: 200px;  " >
+  <br>
+  <img src="Imagenes/méxico8.jpg" alt="Imagen 2"     style="width: 400px;  height: 200px;  " >
+   <br>
+  <img src="Imagenes/vegetacion.jpg" alt="Imagen 2"     style="width: 400px;  height: 200px;  " >
+</div>
+      <br>
+     <h1> <p> <a href="https://www.youtube.com/watch?v=OOcGSoO_e3o&list=RDOOcGSoO_e3o&start_radio=1">Música y Sonido</a></p>
+        <p>Música ambiental: Suena música alegre de fondo, que puede ir desde mariachis y son jarocho hasta pop o música contemporánea mexicana.</p></h1>
+      <br>
+      <br>
+      <div class="contenedor-imagenes">
+  <img src="Imagenes/méxico9.jpg" alt="Imagen 1"     style="width: 400px;  height: 200px;  " >
+  <br>
+  <img src="Imagenes/méxico10.jpg" alt="Imagen 2"      style="width: 400px;  height: 200px;  " >
+   <br>
+  <img src="Imagenes/música.jpg" alt="Imagen 2"      style="width: 400px;  height: 200px;  " >
+</div>
+      <br>
+    <h1> <p> <a href="https://www.youtube.com/watch?v=-ZEmQDnxd_M">Bullicio social:</a>Son espacios animados y ruidosos, ideales para conversar en grupo y disfrutar sin prisas. </p></h1> 
+      <br>
+      <br>
+      <div class="contenedor-imagenes">
+  <img src="Imagenes/méxico11.jpg" alt="Imagen 1"     style="width: 400px;  height: 200px;  " >
+  <br>
+  <img src="Imagenes/méxico12.jpg" alt="Imagen 2"     style="width: 400px;  height: 200px;  " >
+  <br>
+  <img src="Imagenes/bullicio.jpeg" alt="Imagen 2"     style="width: 400px;  height: 200px;  " >
+</div>
+      <br>
+    <h1> <p> <a href="https://www.youtube.com/watch?v=1QFgPgkgLN0">Servicio y Hospitalidad: </a></p>
+        <p>Trato cercano: El personal suele ofrecer una atención cálida, amable y muy hospitalaria que hace sentir al comensal como en casa.</p></h1> 
+      <br>
+      <br>
+      <div class="contenedor-imagenes">
+  <img src="Imagenes/méxico13.jpg" alt="Imagen 1"     style="width: 400px;  height: 200px;  " >
+  <br>
+  <img src="Imagenes/méxico14.jpeg" alt="Imagen 2"      style="width: 400px;  height: 200px;  " >
+  <br>
+  <img src="Imagenes/hospitalidad.webp" alt="Imagen 2"      style="width: 400px;  height: 200px;  " >
+</div>
+      <br>
+    <h1> <p> <a href="https://www.youtube.com/watch?v=Frx6UiUiOrc"> Socialización:</a>Son lugares muy enfocados en compartir platillos al centro, acompañados de margaritas, tequila o mezcal. </p></h1> 
+
+
+ <div class="contenedor-imagenes">
+  <img src="Imagenes/tequila1.jpg" alt="Imagen 1"     style="width: 400px;  height: 200px;  " >
+  <br>
+   <img src="Imagenes/mezcal1.jpg" alt="Imagen 1"     style="width: 400px;  height: 200px;  " >
+  <br>
+  <img src="Imagenes/margarita1.jpg" alt="Imagen 2"      style="width: 400px;  height: 200px;  " >
+</div>
+
+</div>
+
+<br>
+<br>
+<br>
+
+<style>
+        /* CSS Personalizado opcional para ajustar el borde o espaciados */
+        .contenedor-tarjeta {
+            border: 2px solid #343a40; /* Borde oscuro personalizado */
+            border-radius: 8px;        /* Bordes redondeados */
+            overflow: hidden;          /* Evita que la imagen se salga de las esquinas redondeadas */
+        }
+    </style>
+
+
+    <div class="container">
+        <!-- Contenedor principal con borde y flexbox de Bootstrap -->
+        <div class="row align-items-center contenedor-tarjeta bg-white m-auto" style="max-width: 800px;">
+            
+            <!-- Columna de la Imagen -->
+            <div class="col-md-5 p-0">
+                <img src="Imagenes/hosteria1.jpg" class="img-fluid w-100 h-100 object-fit-cover" alt="Imagen de ejemplo">
+            </div>
+            
+            <!-- Columna del Texto (al lado derecho en pantallas medianas/grandes) -->
+            <div class="col-md-7 p-4">
+                <h2 class="card-title mb-3"> Hostería de Santo Domingo:</h2>
+                <p class="card-text text-muted">
+                    Hostería de Santo Domingo: Abrió sus puertas en 1860 y es considerado el restaurante más antiguo de la Ciudad de México. Nació originalmente como un mesón o albergue en la calle de Loreto, muy cerca de la emblemática Plaza de Santo Domingo. Es famoso por mantener recetas tradicionales, especialmente los chiles en nogada que sirven durante todo el año.
+                </p>
+                
+                 <button><a href="https://www.youtube.com/results?search_query=hosteria+de+santo+domingo+mexico">Ir a YouTube</a></button>
+            </div>
+
+        </div>
+    </div>
+
+ 
+
+    <!-- Tu Script personalizado -->
+    <script>
+        // Ejemplo de interactividad con JavaScript
+        document.getElementById('btnAccion').addEventListener('click', function() {
+            alert('¡Hiciste clic en el botón!');
+        });
+    </script>
+
+<br>
+<br>
+<br>
+<style>
+        /* CSS Personalizado opcional para ajustar el borde o espaciados */
+        .contenedor-tarjeta {
+            border: 2px solid #343a40; /* Borde oscuro personalizado */
+            border-radius: 8px;        /* Bordes redondeados */
+            overflow: hidden;          /* Evita que la imagen se salga de las esquinas redondeadas */
+        }
+    </style>
+
+
+    <div class="container">
+        <!-- Contenedor principal con borde y flexbox de Bootstrap -->
+        <div class="row align-items-center contenedor-tarjeta bg-white m-auto" style="max-width: 800px;">
+            
+            <!-- Columna de la Imagen -->
+            <div class="col-md-5 p-0">
+                <img src="Imagenes/el-cardenal.jpg" class="img-fluid w-100 h-100 object-fit-cover" alt="Imagen de ejemplo">
+            </div>
+            
+            <!-- Columna del Texto (al lado derecho en pantallas medianas/grandes) -->
+            <div class="col-md-7 p-4">
+                <h2 class="card-title mb-3">El Cardenal: </h2>
+                <p class="card-text text-muted">
+                    El Cardenal: Fundado en los años 60 por Don Jesús Bris y su esposa Olivia Garizurieta en la calle de Moneda. Empezó como una fonda económica ubicada en la casa de la primera universidad de América. Años después se mudaron a una majestuosa casona cercana. Destaca por hacer sus propias tortillas con nixtamal recién molido y elaborar su propio chocolate.
+                </p>
+          
+                 <button><a href="https://www.youtube.com/results?search_query=el+cardenal+restaurante+mexico">Ir a YouTube</a></button>
+            </div>
+
+        </div>
+    </div>
+
+ 
+
+    <!-- Tu Script personalizado -->
+    <script>
+        // Ejemplo de interactividad con JavaScript
+        document.getElementById('btnAccion').addEventListener('click', function() {
+            alert('¡Hiciste clic en el botón!');
+        });
+    </script>
+
+<br>
+<br>
+<br>
+
+<br>
+<br>
+<br>
+
+<footer class="bg-dark text-light pt-5 pb-4 mt-5" data-bs-theme="dark">
+  <div class="container text-md-left">
+    <div class="row text-md-left">
+      <!-- Columna 1: Info Marca -->
+      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h5 class="text-uppercase mb-4 font-weight-bold text-primary">Restaurante TIJUANA </h5>
+        <p> El restaurante TIJUANA nos brinda una experiencia culinaria y cultural rica en sabores tradicionales</p>
+      </div>
+
+      <!-- Columna 2: Enlaces de interés -->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+        <h5 class="text-uppercase mb-4 font-weight-bold">Productos</h5>
+        <p><a href="Index.html" class="text-secondary text-decoration-none">Inicio</a></p>
+        <p><a href="Index.html" class="text-secondary text-decoration-none">Bienvenida</a></p>
+         <p><a href="Carta.html" class="text-secondary text-decoration-none">Carta</a></p>
+        <p><a href="Reserva.html" class="text-secondary text-decoration-none">Reserva</a></p>
+        <p><a href="Contacto.html" class="text-secondary text-decoration-none">Contacto</a></p>
+        <p><a href="Política.html" class="text-secondary text-decoration-none">Política</a></p>
+      </div>
+
+      <!-- Columna 3: Contacto -->
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h5 class="text-uppercase mb-4 font-weight-bold">Contacto</h5>
+        <p><i class="bi bi-house-door-fill me-2"></i> Valladolid, ES 47007</p>
+        <p><i class="bi bi-envelope-fill me-2"></i> <a href="mailto:info@ejemplo.com" class="text-secondary text-decoration-none">contacto@restaurantetijuana.com</a></p>
+        <p><i class="bi bi-telephone-fill me-2"></i> <a href="tel:+34900000000" class="text-secondary text-decoration-none">626609321</a></p>
+      </div>
+    </div>
+
+    <hr class="mb-4">
+
+    <!-- Fila Inferior: Copyright -->
+    <div class="row align-items-center">
+      <div class="col-md-7 col-lg-8">
+        <p class="text-md-start text-secondary">&copy; 2026 Todos los derechos reservados por <strong class="text-primary">Gabriel E. Vela Martínez</strong></p>
+      </div>
+    </div>
+  </div>
+</footer>
+<br>
+<br>
+<br>
+
+    <div class="container text-center">
+        <h2 class="mb-4 text-secondary">Síguenos en nuestras redes</h2>
+        
+        <!-- Contenedor de Redes Sociales -->
+        <div class="d-flex justify-content-center gap-3">
+            
+            <!-- Facebook -->
+            <a href="https://facebook.com" target="_blank" class="btn btn-social btn-facebook" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+
+            <!-- Instagram -->
+            <a href="https://instagram.com" target="_blank" class="btn btn-social btn-instagram" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+
+            <!-- LinkedIn -->
+            <a href="https://linkedin.com" target="_blank" class="btn btn-social btn-linkedin" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+
+            <!-- Google (Gmail) -->
+            <a href="https://www.google.com/" target="_blank" class="btn btn-social btn-google" aria-label="Google">
+                <i class="fab fa-google"></i>
+            </a>
+
+            <!-- YouTube -->
+            <a href="https://youtube.com" target="_blank" class="btn btn-social btn-youtube" aria-label="YouTube">
+                <i class="fab fa-youtube"></i>
+            </a>
+
+        </div>
+    </div>
+
+</div>
+
+
+<br>
+
+<br>
+
+
+<footer>
+<h3>&copy; All Right Reserved</h3>
+</footer>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+
+<script src="script.js"></script>
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,1485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Doctor Carta</title>
+
+ <link rel="stylesheet" href="style.css">
+
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+
+
+<style>
+   
+body {
+  background-color: white;
+
+}
+
+
+
+/* Reset general */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Contenedor o Marco Principal */
+.menu-frame {
+    background-color: #6f69df; /* Fondo carbón oscuro de la carta */
+    width: 100%;
+    max-width: 750px;
+    padding: 20px;
+    border: 3px solid #e49d32; /* Borde grueso exterior */
+    box-shadow: 0 10px 30px rgba(62, 52, 197, 0.7);
+}
+
+/* Borde Interior Fino */
+.menu-border-inner {
+    border: 1px solid #c5a880; /* Línea concéntrica fina */
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Encabezado */
+.menu-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.menu-header h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 2.8rem;
+    font-weight: 600;
+    letter-spacing: 4px;
+    color: #e5c290; /* Oro más brillante para títulos principal */
+    margin: 10px 0;
+}
+
+.menu-header .subtitle {
+    font-size: 1.1rem;
+    font-style: italic;
+    letter-spacing: 2px;
+    color: #a89270;
+}
+
+.ornament {
+    font-size: 0.8rem;
+    color: #c5a880;
+    letter-spacing: 6px;
+}
+
+/* Distribución del menú */
+.menu-container {
+    width: 100%;
+}
+
+.menu-section {
+    margin-bottom: 45px;
+}
+
+.menu-section h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 1.5rem;
+    text-align: center;
+    letter-spacing: 3px;
+    border-bottom: 1px dashed #ae6a0b;
+    padding-bottom: 8px;
+    margin-bottom: 25px;
+    color: #d4871a;
+}
+
+/* Cuadrícula e Items del menú */
+.items-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Fila superior: Nombre ............. Precio */
+.item-title-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.item-name {
+    color: #945b0c;
+    padding-right: 10px;
+    background-color: #1a1a1a; /* Oculta los puntos detrás del texto */
+    z-index: 1;
+}
+
+/* Relleno con puntos punteados al estilo clásico */
+.item-dots {
+    flex-grow: 1;
+    border-bottom: 2px dotted rgba(197, 168, 128, 0.4);
+    margin-bottom: 5px;
+}
+
+.item-price {
+    padding-left: 10px;
+    background-color: #0ddd4b;
+    z-index: 1;
+    font-family: 'Cinzel', serif;
+}
+
+/* Descripción de la bebida */
+.item-description {
+    font-size: 0.95rem;
+    font-style: italic;
+    color: #f2ebe2;
+    margin-top: 5px;
+    line-height: 1.4;
+}
+
+/* Pie de página */
+.menu-footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    color: #7c6d56;
+}
+
+/* Responsive para pantallas medianas/grandes */
+@media (min-width: 500px) {
+    .items-grid {
+        grid-template-columns: 1fr; /* Mantiene una columna fluida y elegante */
+    }
+}
+
+
+</style>
+
+
+
+<style>
+body {
+  background-color: white;
+}
+
+</style>
+
+
+
+
+
+<style>
+
+  /* Este código solo se activa cuando la pantalla mide 500px o menos */
+@media screen and (max-width: 500px) {
+  
+  /* 1. Contenedor principal: fuerza a los hijos a ponerse en vertical */
+  .contenedor-principal {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Crea una separación limpia entre los bloques para que no se peguen */
+    width: 100%;
+    padding: 10px; /* Evita que el contenido toque los bordes físicos de la pantalla */
+  }
+
+  /* 2. Los bloques internos (divs, secciones, artículos) */
+  .contenedor-principal > div, 
+  .contenedor-principal > section {
+    width: 100%; /* Ocupan todo el ancho disponible */
+    box-sizing: border-box; /* Asegura que el padding no rompa el diseño */
+    float: none; /* Elimina floats antiguos si los tenías, evitando que se crucen */
+  }
+
+  /* 3. Protección para las imágenes: no se desbordan ni se enciman */
+  img {
+    max-width: 100%; /* No se salen de su contenedor */
+    height: auto; /* Mantienen su proporción original sin deformarse */
+    display: block; /* Elimina espacios vacíos inline */
+    margin: 0 auto; /* Las centra si son más pequeñas que el contenedor */
+  }
+}
+</style>
+
+
+<style>
+    header {
+  background-color: #222222;
+  transition: background-color 0.4s ease, transform 0.3s ease;
+}
+
+header:hover {
+  background-color: #ff5722;
+  transform: scale(1.01);
+}
+</style>
+
+
+
+</head>
+<body>
+ 
+<header>
+    <div class="logo">
+      
+
+        
+<div class="contenedor">
+  <img src="Imagenes/logoTijuana.png" alt="Ejemplo"   style="width:100px; height:100px; "   >
+</div>
+    </div>
+
+<nav>
+    <ul>
+        <li><a href="Index.html">Inicio</a></li>
+        <li><a href="Bienvenida.html">Bienvenida</a></li>
+        <li><a href="Carta.html">Carta</a></li>
+        <li><a href="Reserva.html">Reserva</a></li>
+        <li><a href="Contacto.html">Contacto</a></li>
+        <li><a href="Política.html">Politica</a></li>
+
+    </ul>
+</nav>
+
+</header>
+
+
+
+<br>
+
+
+<br>
+
+
+    <div class="container text-center">
+        <h2 class="mb-4 text-secondary">Síguenos en nuestras redes</h2>
+        
+        <!-- Contenedor de Redes Sociales -->
+        <div class="d-flex justify-content-center gap-3">
+            
+            <!-- Facebook -->
+            <a href="https://facebook.com" target="_blank" class="btn btn-social btn-facebook" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+
+            <!-- Instagram -->
+            <a href="https://instagram.com" target="_blank" class="btn btn-social btn-instagram" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+
+            <!-- LinkedIn -->
+            <a href="https://linkedin.com" target="_blank" class="btn btn-social btn-linkedin" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+
+            <!-- Google (Gmail) -->
+            <a href="https://www.google.com/" target="_blank" class="btn btn-social btn-google" aria-label="Google">
+                <i class="fab fa-google"></i>
+            </a>
+
+            <!-- YouTube -->
+            <a href="https://youtube.com" target="_blank" class="btn btn-social btn-youtube" aria-label="YouTube">
+                <i class="fab fa-youtube"></i>
+            </a>
+
+        </div>
+    </div>
+
+
+
+<br>
+<br>
+<div  class="contenedor-principal"> 
+<br>
+
+
+
+<style>
+        /* CSS Personalizado opcional para ajustar el borde o espaciados */
+        .contenedor-tarjeta {
+            border: 2px solid #343a40; /* Borde oscuro personalizado */
+            border-radius: 8px;        /* Bordes redondeados */
+            overflow: hidden;          /* Evita que la imagen se salga de las esquinas redondeadas */
+        }
+    </style>
+
+
+    <div class="container">
+        <!-- Contenedor principal con borde y flexbox de Bootstrap -->
+        <div class="row align-items-center contenedor-tarjeta bg-white m-auto" style="max-width: 800px;">
+            
+            <!-- Columna de la Imagen -->
+            <div class="col-md-5 p-0">
+                <img src="Imagenes/chef.jpg" class="img-fluid w-100 h-100 object-fit-cover" alt="Imagen de ejemplo">
+            </div>
+            
+            <!-- Columna del Texto (al lado derecho en pantallas medianas/grandes) -->
+            <div class="col-md-7 p-4">
+                <h2 class="card-title mb-3">Chef Ejecutivo</h2>
+                <p class="card-text text-muted">
+                   Chef Ejecutivo: Diseña el menú, define el concepto y supervisa la calidad general de los platos.
+                </p>
+             
+                <button><a href="https://www.youtube.com/results?search_query=chef+ejecutivo+mexicano">Ir a YouTube</a></button>
+               
+            </div>
+
+        </div>
+    </div>
+
+  
+    <!-- Tu Script personalizado -->
+    <script>
+        // Ejemplo de interactividad con JavaScript
+        document.getElementById('btnAccion').addEventListener('click', function() {
+            alert('¡Hiciste clic en el botón!');
+        });
+    </script>
+    
+
+
+
+
+
+
+  <br>
+  <br> 
+  <br> 
+   
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: white;
+        }
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://unsplash.com') no-repeat center center/cover;
+            color: white;
+            padding: 60px 0;
+        }
+        .btn-filter {
+            border-radius: 30px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        .btn-filter.active {
+            background-color: #ffc107;
+            color: #000;
+            border-color: #ffc107;
+        }
+        .card-menu {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+            overflow: hidden;
+        }
+        .card-menu:hover {
+            transform: translateY(-5px);
+        }
+        .menu-price {
+            color: #dc3545;
+            font-weight: 700;
+            font-size: 1.25rem;
+        }
+        /* Clase para ocultar con animacion sencilla */
+        .menu-item.hide {
+            display: none !important;
+        }
+    </style>
+
+
+    <!-- Encabezado / Hero -->
+    <header class="hero-section text-center mb-5">
+        <div class="container">
+            <h1 class="display-4 fw-bold">RESTAURANTE TIJUANA</h1>
+            <p class="lead">El auténtico sabor tradicional en tu mesa</p>
+        </div>
+    </header>
+
+    <!-- Filtros de Categorías -->
+    <main class="container mb-5">
+        <div class="row mb-4">
+            <div class="col-12 text-center">
+                <div class="d-flex flex-wrap justify-content-center gap-2" id="filter-buttons">
+                    <button class="btn btn-outline-dark btn-filter active" data-filter="todos">Todos</button>
+                    <button class="btn btn-outline-dark btn-filter" data-filter="tacos">Tacos</button>
+                    <button class="btn btn-outline-dark btn-filter" data-filter="burritos">Burritos</button>
+                    <button class="btn btn-outline-dark btn-filter" data-filter="nachos">Nachos</button>
+                    <button class="btn btn-outline-dark btn-filter" data-filter="quesadillas">Quesadillas</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cuadrícula del Menú -->
+        <div class="row g-4" id="menu-container">
+            
+            <!-- Tacos -->
+            <div class="col-md-6 col-lg-4 menu-item" data-category="tacos">
+                <div class="card card-menu h-100">
+                    <img src="Imagenes/tacos al pastor.avif" style="width: 300; height: 200px;" class="card-img-top" alt="Tacos al Pastor">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <h5 class="card-title mb-0 fw-bold">Tacos al Pastor</h5>
+
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+  <path d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0z"/>
+  <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+</svg>
+
+
+
+                            <span class="menu-price">$24.50</span>
+                        </div>
+                        <p class="card-text text-muted small">Seis tacos de cerdo marinado con piña, cilantro y cebolla picada.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Burritos -->
+            <div class="col-md-6 col-lg-4 menu-item" data-category="burritos">
+                <div class="card card-menu h-100">
+                    <img src="Imagenes/Burrito-Supremo.webp" style="width: 300; height: 200px;" class="card-img-top" alt="Burrito Supremo">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <h5 class="card-title mb-0 fw-bold">Burrito Supremo</h5>
+
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+  <path d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0z"/>
+  <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+</svg>
+
+
+
+
+                            <span class="menu-price">$14.00</span>
+                        </div>
+                        <p class="card-text text-muted small">Gran tortilla de harina rellena de carne asada, arroz, frijoles y guacamole.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Nachos -->
+            <div class="col-md-6 col-lg-4 menu-item" data-category="nachos">
+                <div class="card card-menu h-100">
+                    <img src="Imagenes/nachos-menu.webp"  style="width: 300; height: 200px;"   class="card-img-top" alt="Nachos con Queso">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <h5 class="card-title mb-0 fw-bold">Nachos Especiales</h5>
+
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+  <path d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0z"/>
+  <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+</svg>
+
+
+
+
+                            <span class="menu-price">$6.50</span>
+                        </div>
+                        <p class="card-text text-muted small">Totopos crujientes bañados en queso fundido, jalapeños y frijoles negros.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quesadillas -->
+            <div class="col-md-6 col-lg-4 menu-item" data-category="quesadillas">
+                <div class="card card-menu h-100">
+                    <img src="Imagenes/quesadilla de pollo.avif"  style="width: 300; height: 200px;"   class="card-img-top" alt="Quesadilla de Pollo">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <h5 class="card-title mb-0 fw-bold">Quesadilla de Pollo</h5>
+
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+  <path d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0z"/>
+  <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+</svg>
+
+
+
+                            <span class="menu-price">$20.00</span>
+                        </div>
+                        <p class="card-text text-muted small">Tortilla a la plancha rellena de queso Oaxaca derretido y pollo deshebrado.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const buttons = document.querySelectorAll('.btn-filter');
+            const items = document.querySelectorAll('.menu-item');
+
+            buttons.forEach(button => {
+                button.addEventListener('click', () => {
+                    // Cambiar clase activa en los botones
+                    buttons.forEach(btn => btn.classList.remove('active'));
+                    button.classList.add('active');
+
+                    // Obtener la categoría seleccionada
+                    const targetCategory = button.getAttribute('data-filter');
+
+                    // Filtrar tarjetas
+                    items.forEach(item => {
+                        const itemCategory = item.getAttribute('data-category');
+                        
+                        if (targetCategory === 'todos' || itemCategory === targetCategory) {
+                            item.classList.remove('hide');
+                        } else {
+                            item.classList.add('hide');
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+
+
+
+
+
+  
+<br>
+<br>
+<br>
+
+<style>
+        /* CSS personalizado para ajustar las imágenes */
+        .card-img-top {
+            height: 250px;
+            object-fit: cover; /* Evita que la foto se deforme */
+        }
+        /* Opcional: un efecto sutil al pasar el mouse */
+        .card {
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: scale(1.02);
+        }
+    </style>
+
+
+    <div class="container">
+        <h2 class="text-center mb-4">Nuestros Productos</h2>
+        
+        <!-- Grid de Bootstrap: cambia de 1 a 3 columnas según la pantalla -->
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            
+            <!-- Producto 1 -->
+            <div class="col">
+                <div class="card h-100 border-secondary-subtle shadow-sm">
+                    <img src="Imagenes/horchata1.jpg" class="card-img-top" alt="Producto 1">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold"> Agua de horchata artesanal</h5>
+                        <p class="card-text text-success fs-5 fw-semibold">€2.50</p>
+                        <button class="btn btn-primary w-100">Comprar <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+  <path d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0z"/>
+  <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+</svg></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="col">
+                <div class="card h-100 border-secondary-subtle shadow-sm">
+                    <img src="Imagenes/jamaica1.webp" class="card-img-top" alt="Producto 2">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold">Agua de Jamaica con jengibre</h5>
+                        <p class="card-text text-success fs-5 fw-semibold">€2.50</p>
+                        
+                        <button class="btn btn-primary w-100">Comprar <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+  <path d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0z"/>
+  <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+</svg></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="col">
+                <div class="card h-100 border-secondary-subtle shadow-sm">
+                    <img src="Imagenes/pozol1.jpg" class="card-img-top" alt="Producto 3">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold">Pozol Tabasqueño</h5>
+                        <p class="card-text text-success fs-5 fw-semibold">€3.00</p>
+                        <button class="btn btn-primary w-100">Comprar <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+  <path d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0z"/>
+  <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+</svg></button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+<br>
+<br>
+<br>
+
+<style>
+        /* CSS personalizado para ajustar las imágenes */
+        .card-img-top {
+            height: 250px;
+            object-fit: cover; /* Evita que la foto se deforme */
+        }
+        /* Opcional: un efecto sutil al pasar el mouse */
+        .card {
+            transition: transform 0.2s;
+        }
+        .card:hover  {
+            transform: scale(1.02);
+        }
+    </style>
+
+
+    <div class="container">
+        <h2 class="text-center mb-4">Nuestros Productos</h2>
+        
+        <!-- Grid de Bootstrap: cambia de 1 a 3 columnas según la pantalla -->
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            
+            <!-- Producto 1 -->
+            <div class="col">
+                <div class="card h-100 border-secondary-subtle shadow-sm">
+                    <img src="Imagenes/margarita(1).jpg" class="card-img-top" alt="Producto 1">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold">Margarita de Mezcal Ancestral</h5>
+                        <p class="card-text text-success fs-5 fw-semibold">€6.00</p>
+                        <button class="btn btn-primary w-100">Comprar <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+  <path d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0z"/>
+  <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+</svg></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="col">
+                <div class="card h-100 border-secondary-subtle shadow-sm">
+                    <img src="Imagenes/paloma1.jpg" class="card-img-top" alt="Producto 2">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold">Paloma Premiun</h5>
+                        <p class="card-text text-success fs-5 fw-semibold">€5.00</p>
+                        <button class="btn btn-primary w-100">Comprar <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+  <path d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0z"/>
+  <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+</svg></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="col">
+                <div class="card h-100 border-secondary-subtle shadow-sm">
+                    <img src="Imagenes/carajillo.jpg" class="card-img-top" alt="Producto 3">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold">Carajillo Oaxaqueño</h5>
+                        <p class="card-text text-success fs-5 fw-semibold">€4.50</p>
+                        <button class="btn btn-primary w-100">Comprar <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+  <path d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0z"/>
+  <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+</svg></button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+<br>
+<br>
+<br>
+
+    <!-- Marco exterior de la carta -->
+    <div class="menu-frame">
+        <!-- Borde interior elegante -->
+        <div class="menu-border-inner">
+            
+            <header class="menu-header">
+                <div class="ornament">❖ ❖ ❖</div>
+                <h1>Restaurante TIJUANA</h1>
+                <p class="subtitle">Carta de Bebidas Tradicionales</p>
+                <div class="ornament">❖ ❖ ❖</div>
+            </header>
+
+            <main class="menu-container">
+                <!-- Las secciones se llenarán dinámicamente con JavaScript -->
+                <section class="menu-section" id="tradicionales">
+                    <h2>Bebidas Tradicionales</h2>
+                    <div class="items-grid" id="grid-tradicionales"></div>
+                </section>
+
+                <section class="menu-section" id="cocteles">
+                    <h2>Destilados & Cócteles</h2>
+                    <div class="items-grid" id="grid-cocteles"></div>
+                </section>
+            </main>
+
+            <footer class="menu-footer">
+                <p>Todos los precios incluyen IVA. Evite el exceso.</p>
+            </footer>
+
+        </div>
+    </div>
+
+
+
+
+<script>
+// Base de datos de las bebidas en formato JSON / Objetos
+const bebidasTradicionales = [
+    { nombre: "Agua de Horchata Artesanal", precio: "€2.50", desc: "Clásica agua de arroz con leche, canela de Ceilán y un toque de vainilla de Papantla." },
+    { nombre: "Agua de Jamaica con Jengibre", precio: "€2.50", desc: "Infusión fría de flor de jamaica orgánica con un sutil toque refrescante de jengibre." },
+    { nombre: "Pozol Tabasqueño", precio: "€3.00", desc: "Bebida ancestral a base de maíz cacao fermentado, servida bien fría." }
+];
+
+const coctelesDestilados = [
+    { nombre: "Margarita de Mezcal Ancestral", precio: "€6.00", desc: "Mezcal espadín artesanal, jugo de limón criollo, licor de naranja y escarcha de sal de gusano." },
+    { nombre: "Paloma Premium", precio: "€5.50", desc: "Tequila reposado 100% de agave, refresco de toronja artesanal, pizca de sal rosa y limón." },
+    { nombre: "Carajillo Oaxaqueño", precio: "€4.50", desc: "Café espresso pluma hidalgo, Licor 43 y un shot de mezcal joven con notas ahumadas." }
+];
+
+// Función para renderizar los elementos en el contenedor correspondiente
+function cargarMenu(items, idContenedor) {
+    const contenedor = document.getElementById(idContenedor);
+    
+    items.forEach(bebida => {
+        // Crear elemento contenedor del item
+        const itemDiv = document.createElement('div');
+        itemDiv.className = 'menu-item';
+
+        // Estructura interna
+        itemDiv.innerHTML = `
+            <div class="item-title-price">
+                <span class="item-name">${bebida.nombre}</span>
+                <div class="item-dots"></div>
+                <span class="item-price">${bebida.precio}</span>
+            </div>
+            <p class="item-description">${bebida.desc}</p>
+        `;
+
+        contenedor.appendChild(itemDiv);
+    });
+}
+
+// Ejecutar la carga cuando el documento esté listo
+document.addEventListener('DOMContentLoaded', () => {
+    cargarMenu(bebidasTradicionales, 'grid-tradicionales');
+    cargarMenu(coctelesDestilados, 'grid-cocteles');
+});
+
+
+</script>
+
+<br>
+<br>
+<br>
+  <style>
+        body {
+            background-color: #f8f9fa;
+     
+        }
+        .card {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .table-total {
+            font-weight: bold;
+            background-color: #e9ecef;
+        }
+    </style>
+
+
+<div class="container">
+    <div class="row g-4">
+        <!-- Formulario de Pedido -->
+        <div class="col-md-5">
+            <div class="card p-4">
+                <h3 class="mb-4 text-center text-primary">Nueva Comanda</h3>
+                <form id="orderForm">
+                    <div class="mb-3">
+                        <label for="customerName" class="form-label">Nombre del Cliente</label>
+                        <input type="text" class="form-control" id="customerName" required placeholder="Ej. Gabriel E. Vela Martínez">
+                    </div>
+
+                    <h5 class="mt-4 mb-3 text-secondary">Comida</h5>
+                    <div class="row g-2">
+                        <div class="col-6">
+                            <label for="tacos" class="form-label">Tacos (3.50€)</label>
+                            <input type="number" class="form-control item-input" id="tacos" data-price="3.50" min="0" value="0">
+                        </div>
+                        <div class="col-6">
+                            <label for="burritos" class="form-label">Burritos (7.00€)</label>
+                            <input type="number" class="form-control item-input" id="burritos" data-price="7.00" min="0" value="0">
+                        </div>
+                        <div class="col-6">
+                            <label for="nachos" class="form-label">Nachos (6.50€)</label>
+                            <input type="number" class="form-control item-input" id="nachos" data-price="6.50" min="0" value="0">
+                        </div>
+                        <div class="col-6">
+                            <label for="quesadillas" class="form-label">Quesadillas (5.00€)</label>
+                            <input type="number" class="form-control item-input" id="quesadillas" data-price="5.00" min="0" value="0">
+                        </div>
+                    </div>
+
+                    <h5 class="mt-4 mb-3 text-secondary">Bebida</h5>
+                    <div class="row g-2">
+                        <div class="col-4">
+                            <label for="horchata" class="form-label">Horchata (2.50€)</label>
+                            <input type="number" class="form-control item-input" id="horchata" data-price="2.50" min="0" value="0">
+                        </div>
+                        <div class="col-4">
+                            <label for="jamaica" class="form-label">Jamaica (2.50€)</label>
+                            <input type="number" class="form-control item-input" id="jamaica" data-price="2.50" min="0" value="0">
+                        </div>
+                        <div class="col-4">
+                            <label for="pozol" class="form-label">Pozol (3.00€)</label>
+                            <input type="number" class="form-control item-input" id="pozol" data-price="3.00" min="0" value="0">
+                        </div>
+                        <div class="col-4">
+                            <label for="margarita" class="form-label">Margarita (6.00€)</label>
+                            <input type="number" class="form-control item-input" id="margarita" data-price="6.00" min="0" value="0">
+                        </div>
+                        <div class="col-4">
+                            <label for="paloma" class="form-label">Paloma (5.50€)</label>
+                            <input type="number" class="form-control item-input" id="paloma" data-price="5.50" min="0" value="0">
+                        </div>
+                        <div class="col-4">
+                            <label for="carajillo" class="form-label">Carajillo (4.50€)</label>
+                            <input type="number" class="form-control item-input" id="carajillo" data-price="4.50" min="0" value="0">
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary w-100 mt-4">Agregar a la Tabla</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Tabla de Registros -->
+        <div class="col-md-7">
+            <div class="card p-4 h-100 d-flex flex-column justify-content-between">
+                <div>
+                    <h3 class="mb-4 text-center text-success">Resumen de Ventas</h3>
+                    <div class="table-responsive">
+                        <table class="table table-striped table-bordered" id="salesTable">
+                            <thead class="table-dark">
+                                <tr>
+                                    <th>Cliente</th>
+                                    <th>Detalle Pedido</th>
+                                    <th>Total (€)</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tableBody">
+                                <!-- Filas dinámicas -->
+                            </tbody>
+                            <tfoot>
+                                <tr class="table-total">
+                                    <td colspan="2" class="text-end">Suma Total General:</td>
+                                    <td id="grandTotal">0.00 €</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+                <div class="mt-3">
+                    <button id="exportBtn" class="btn btn-success w-100">Exportar y Descargar Datos (CSV)</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    let totalGeneral = 0;
+
+    document.getElementById('orderForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        const customerName = document.getElementById('customerName').value;
+        const inputs = document.querySelectorAll('.item-input');
+        
+        let orderDetails = [];
+        let orderTotal = 0;
+
+        inputs.forEach(input => {
+            const quantity = parseInt(input.value) || 0;
+            if (quantity > 0) {
+                const price = parseFloat(input.dataset.price);
+                const name = input.id.charAt(0).toUpperCase() + input.id.slice(1);
+                const subtotal = quantity * price;
+                
+                orderTotal += subtotal;
+                orderDetails.push(`${name} x${quantity}`);
+            }
+        });
+
+        if (orderTotal === 0) {
+            alert('Por favor, añade al menos un alimento o bebida al pedido.');
+            return;
+        }
+
+        // Insertar fila en la tabla
+        const tableBody = document.getElementById('tableBody');
+        const row = document.createElement('tr');
+        
+        row.innerHTML = `
+            <td>${customerName}</td>
+            <td>${orderDetails.join(', ')}</td>
+            <td>${orderTotal.toFixed(2)} €</td>
+        `;
+        
+        tableBody.appendChild(row);
+
+        // Actualizar Suma Total General
+        totalGeneral += orderTotal;
+        document.getElementById('grandTotal').innerText = `${totalGeneral.toFixed(2)} €`;
+
+        // Resetear formulario
+        document.getElementById('orderForm').reset();
+    });
+
+    // Función para exportar la tabla a CSV
+    document.getElementById('exportBtn').addEventListener('click', function() {
+        const table = document.getElementById('salesTable');
+        let csv = [];
+        
+        for (let i = 0; i < table.rows.length; i++) {
+            let row = [], cols = table.rows[i].querySelectorAll('td, th');
+            
+            for (let j = 0; j < cols.length; j++) {
+                // Limpiar comillas y formatear texto
+                let data = cols[j].innerText.replace(/"/g, '""');
+                row.push(`"${data}"`);
+            }
+            csv.push(row.join(';')); // Separador punto y coma para Excel en español
+        }
+
+        const csvContent = 'data:text/csv;charset=utf-8,\uFEFF' + csv.join('\n');
+        const encodedUri = encodeURI(csvContent);
+        const link = document.createElement('a');
+        
+        link.setAttribute('href', encodedUri);
+        link.setAttribute('download', 'resumen_ventas_comanda.csv');
+        document.body.appendChild(link);
+        
+        link.click();
+        document.body.removeChild(link);
+    });
+</script>
+
+
+
+
+<br>
+<br>
+<br>
+
+   <style>
+        body { background-color: #f8f9fa; }
+        .product-card { max-width: 350px; margin: 0 auto; }
+        .product-img { height: 250px; object-fit: cover; }
+    </style>
+
+
+<div class="container my-5">
+    <!-- 1. Tarjeta de Producto -->
+    <div class="card product-card shadow-sm mb-5">
+        <!-- Reemplaza la URL por la de tu imagen -->
+        <img src="Imagenes/combo4.jpg" class="card-img-top product-img" alt="Zapatillas">
+        <div class="card-body text-center">
+            <h5 class="card-title" id="prod-nombre">Combo ¡ A TODA MADRE!</h5>
+            <p class="card-text text-danger fw-bold fs-4" id="prod-precio">\€46.50</p>
+            <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#modalPago">Comprar</button>
+        </div>
+    </div>
+
+    <!-- 2. Tabla de Ventas / Registros -->
+    <div class="card shadow-sm p-4">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <h4 class="m-0">Historial de Ventas</h4>
+            <button id="btnExportar" class="btn btn-success" onclick="exportarTablaCSV()">Exportar a CSV</button>
+        </div>
+        <div class="table-responsive">
+            <table class="table table-striped table-hover" id="tablaVentas">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Producto</th>
+                        <th>Precio</th>
+                        <th>Nombre Cliente</th>
+                        <th>Dirección</th>
+                        <th>Nº Tarjeta (Oculto)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Los datos se insertarán aquí dinámicamente -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+<!-- 3. Ventana Emergente (Modal) con el Formulario de Pago -->
+<div class="modal fade" id="modalPago" tabindex="-1" aria-labelledby="modalPagoLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalPagoLabel">Formulario de Pago</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form id="formPago" onsubmit="procesarPago(event)">
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label class="form-label">Nombre Completo</label>
+                        <input type="text" id="cli-nombre" class="form-control" required placeholder="Gabriel E. Vela">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Dirección de Entrega</label>
+                        <input type="text" id="cli-direccion" class="form-control" required placeholder="Francisco Zarandona, 2, Ciudad">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Número de Tarjeta</label>
+                        <input type="text" id="cli-tarjeta" class="form-control" maxlength="16" pattern="\d{16}" required placeholder="1234567890123456">
+                    </div>
+                    <div class="row">
+                        <div class="col-6 mb-3">
+                            <label class="form-label">Expiración</label>
+                            <input type="text" class="form-control" placeholder="MM/AA" required>
+                        </div>
+                        <div class="col-6 mb-3">
+                            <label class="form-label">CVV</label>
+                            <input type="password" class="form-control" maxlength="3" pattern="\d{3}" required placeholder="123">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="submit" class="btn btn-success">Pagar Ahora</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    // Función para manejar el envío del formulario
+    function procesarPago(event) {
+        event.preventDefault(); // Evita que la página se recargue
+
+        // Obtener los datos del producto y del formulario
+        const producto = document.getElementById('prod-nombre').innerText;
+        const precio = document.getElementById('prod-precio').innerText;
+        const nombre = document.getElementById('cli-nombre').value;
+        const direccion = document.getElementById('cli-direccion').value;
+        const tarjetaFull = document.getElementById('cli-tarjeta').value;
+        
+        // Enmascarar la tarjeta por seguridad (mostrar solo los últimos 4 dígitos)
+        const tarjetaOculta = "**** **** **** " + tarjetaFull.slice(-4);
+
+        // Obtener la tabla e insertar una nueva fila
+        const tabla = document.getElementById('tablaVentas').getElementsByTagName('tbody')[0];
+        const nuevaFila = tabla.insertRow();
+
+        nuevaFila.innerHTML = `
+            <td>${producto}</td>
+            <td>${precio}</td>
+            <td>${nombre}</td>
+            <td>${direccion}</td>
+            <td>${tarjetaOculta}</td>
+        `;
+
+        // Limpiar el formulario y cerrar la ventana flotante (Modal)
+        document.getElementById('formPago').reset();
+        const modalElement = document.getElementById('modalPago');
+        const modalInstance = bootstrap.Modal.getInstance(modalElement);
+        modalInstance.hide();
+
+        alert('¡Pago procesado con éxito y añadido a la tabla!');
+    }
+
+    // Función para descargar los datos de la tabla en formato CSV (Excel)
+    function exportarTablaCSV() {
+        const filas = document.querySelectorAll("#tablaVentas tr");
+        let contenidoCSV = "data:text/csv;charset=utf-8,";
+
+        filas.forEach(fila => {
+            const celdas = fila.querySelectorAll("th, td");
+            const datosFila = Array.from(celdas).map(celda => `"${celda.innerText}"`).join(",");
+            contenidoCSV += datosFila + "\r\n";
+        });
+
+        // Crear enlace temporal de descarga
+        const enlaceCodificado = encodeURI(contenidoCSV);
+        const enlaceDescarga = document.createElement("a");
+        enlaceDescarga.setAttribute("href", enlaceCodificado);
+        enlaceDescarga.setAttribute("download", "historial_ventas.csv");
+        document.body.appendChild(enlaceDescarga);
+
+        enlaceDescarga.click();
+        document.body.removeChild(enlaceDescarga);
+    }
+</script>
+
+<br>
+<br>
+<br>
+
+ <style>
+        .carousel-item img {
+            height: 500px; /* Altura fija para el slider */
+            object-fit: cover; /* Evita que la imagen se deforme */
+        }
+    </style>
+
+
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Galería de 7 Imágenes</h2>
+        
+        <!-- Inicio del Carrusel Bootstrap -->
+        <div id="miSlider" class="carousel slide shadow" data-bs-ride="carousel">
+            
+            <!-- Indicadores (del 0 al 6 para las 7 imágenes) -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#miSlider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#miSlider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#miSlider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#miSlider" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#miSlider" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#miSlider" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                <button type="button" data-bs-target="#miSlider" data-bs-slide-to="6" aria-label="Slide 7"></button>
+            </div>
+
+            <!-- Contenedor de las diapositivas -->
+            <div class="carousel-inner rounded">
+                <!-- Imagen 1 (Activa por defecto) -->
+                <div class="carousel-item active">
+                    <img src="Imagenes/tijuana4.jpg" class="d-block w-100" alt="Imagen 1">
+                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                        <h5>Primera Imagen</h5>
+                        <p>Descripción de la primera diapositiva.</p>
+                    </div>
+                </div>
+                <!-- Imagen 2 -->
+                <div class="carousel-item">
+                    <img src="Imagenes/tijuana5.webp" class="d-block w-100" alt="Imagen 2">
+                </div>
+                <!-- Imagen 3 -->
+                <div class="carousel-item">
+                    <img src="Imagenes/tijuana6.jpg" class="d-block w-100" alt="Imagen 3">
+                </div>
+                <!-- Imagen 4 -->
+                <div class="carousel-item">
+                    <img src="Imagenes/tijuana7.jpg" class="d-block w-100" alt="Imagen 4">
+                </div>
+                <!-- Imagen 5 -->
+                <div class="carousel-item">
+                    <img src="Imagenes/tijuana11.jpg" class="d-block w-100" alt="Imagen 5">
+                </div>
+                <!-- Imagen 6 -->
+                <div class="carousel-item">
+                    <img src="Imagenes/tijuana9.webp" class="d-block w-100" alt="Imagen 6">
+                </div>
+                <!-- Imagen 7 -->
+                <div class="carousel-item">
+                    <img src="Imagenes/tijuana10.webp" class="d-block w-100" alt="Imagen 7">
+                </div>
+            </div>
+
+            <!-- Controles de Siguiente / Anterior -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#miSlider" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#miSlider" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+        <!-- Fin del Carrusel -->
+
+    </div>
+
+<br>
+<br>
+<br>
+<style>
+        /* Efecto visual al pasar el ratón sobre la imagen */
+        .producto-img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            border-radius: 8px;
+        }
+        .producto-img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        .producto-img:active {
+            transform: scale(0.95);
+        }
+    </style>
+
+
+<div class="container my-5">
+    <h2 class="text-center mb-4">Selección de Productos</h2>
+    <p class="text-muted text-center">Haz clic en las <strong>imágenes</strong> para sumar sus precios al total.</p>
+
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <!-- Tabla de Productos -->
+            <div class="table-responsive shadow-sm bg-white rounded">
+                <table class="table table-hover align-middle mb-0">
+                    <thead class="table-dark">
+                        <tr>
+                            <th scope="col" class="text-center">Imagen (Clic aquí)</th>
+                            <th scope="col">Nombre del Producto</th>
+                            <th scope="col" class="text-end">Precio</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="text-center">
+                                <img src="Imagenes/menu-taco.webp" alt="Taco" class="producto-img" data-precio="14.50">
+                            </td>
+                            <td>Menú de Taco</td>
+                            <td class="text-end fw-bold">14,50 €</td>
+                        </tr>
+                        <tr>
+                            <td class="text-center">
+                                <img src="Imagenes/menu-burrito-2.webp" alt="Burrito" class="producto-img" data-precio="11.00">
+                            </td>
+                            <td>Menú Burrito</td>
+                            <td class="text-end fw-bold">11,00 €</td>
+                        </tr>
+                        <tr>
+                            <td class="text-center">
+                                <img src="Imagenes/menu-nachos2.jpeg" alt="Nachos" class="producto-img" data-precio="8.50">
+                            </td>
+                            <td>Menú Nachos</td>
+                            <td class="text-end fw-bold">8,50 €</td>
+                        </tr>
+                        <tr>
+                            <td class="text-center">
+                                <img src="Imagenes/menu-quesadilla2.jpeg" alt="Quesadilla" class="producto-img" data-precio="21.00">
+                            </td>
+                            <td>Menú Quesadilla</td>
+                            <td class="text-end fw-bold">21,00 €</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Panel de Resultados y Acciones -->
+            <div class="card mt-4 shadow-sm">
+                <div class="card-body d-flex justify-content-between align-items-center">
+                    <div>
+                        <h4 class="mb-0">Total Acumulado: <span id="total-display" class="text-success fw-bold">0,00 €</span></h4>
+                    </div>
+                    <div>
+                        <button id="btn-limpiar" class="btn btn-outline-secondary me-2">Limpiar</button>
+                        <button id="btn-exportar" class="btn btn-primary">Exportar Total</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- JavaScript para la lógica -->
+<script>
+    // Variables de estado
+    let totalSuma = 0.0;
+
+    // Elementos del DOM
+    const totalDisplay = document.getElementById('total-display');
+    const btnExportar = document.getElementById('btn-exportar');
+    const btnLimpiar = document.getElementById('btn-limpiar');
+    const imagenes = document.querySelectorAll('.producto-img');
+
+    // Formateador para moneda Euro
+    const formatearEuro = (cantidad) => {
+        return new Intl.NumberFormat('es-ES', { style: 'currency', currency: 'EUR' }).format(cantidad);
+    };
+
+    // Evento al hacer clic en las imágenes
+    imagenes.forEach(imagen => {
+        imagen.addEventListener('click', () => {
+            // Obtener el precio desde el atributo personalizado data-precio
+            const precio = parseFloat(imagen.getAttribute('data-precio'));
+            
+            // Sumar al total
+            totalSuma += precio;
+            
+            // Actualizar la pantalla
+            totalDisplay.textContent = formatearEuro(totalSuma);
+        });
+    });
+
+    // Evento para limpiar el total
+    btnLimpiar.addEventListener('click', () => {
+        totalSuma = 0.0;
+        totalDisplay.textContent = formatearEuro(totalSuma);
+    });
+
+    // Evento para exportar/descargar el resultado en un archivo .txt
+    btnExportar.addEventListener('click', () => {
+        const textoContenido = `Resumen de Compra\n---------------------\nTotal Acumulado: ${formatearEuro(totalSuma)}\nFecha: ${new Date().toLocaleString()}`;
+        
+        // Crear un archivo temporal en memoria
+        const blob = new Blob([textoContenido], { type: 'text/plain;charset=utf-8' });
+        const url = URL.createObjectURL(blob);
+        
+        // Crear un enlace oculto para forzar la descarga
+        const enlaceDescarga = document.createElement('a');
+        enlaceDescarga.href = url;
+        enlaceDescarga.download = 'total_acumulado.txt';
+        
+        // Simular el clic de descarga y limpiar memoria
+        document.body.appendChild(enlaceDescarga);
+        enlaceDescarga.click();
+        document.body.removeChild(enlaceDescarga);
+        URL.revokeObjectURL(url);
+    });
+</script>
+
+
+
+
+
+
+<br>
+<br>
+<br>
+
+</div>
+<footer class="bg-dark text-light pt-5 pb-4 mt-5" data-bs-theme="dark">
+  <div class="container text-md-left">
+    <div class="row text-md-left">
+      <!-- Columna 1: Info Marca -->
+      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h5 class="text-uppercase mb-4 font-weight-bold text-primary">RESTAURANTE TIJUANA</h5>
+        <p> El restaurante TIJUANA nos brinda una experiencia culinaria y cultural rica en sabores tradicionales</p>
+      </div>
+
+      <!-- Columna 2: Enlaces de interés -->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+        <h5 class="text-uppercase mb-4 font-weight-bold">Productos</h5>
+        <p><a href="Index.html" class="text-secondary text-decoration-none">Inicio</a></p>
+        <p><a href="Bienvenida.html" class="text-secondary text-decoration-none">Bienvenida</a></p>
+         <p><a href="Carta.html" class="text-secondary text-decoration-none">Carta</a></p>
+        <p><a href="Reserva.html" class="text-secondary text-decoration-none">Reserva</a></p>
+        <p><a href="Contacto.html" class="text-secondary text-decoration-none">Contacto</a></p>
+        <p><a href="Política.html" class="text-secondary text-decoration-none">Política</a></p>
+      </div>
+
+      <!-- Columna 3: Contacto -->
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h5 class="text-uppercase mb-4 font-weight-bold">Contacto</h5>
+        <p><i class="bi bi-house-door-fill me-2"></i> Valladolid, ES 47007</p>
+        <p><i class="bi bi-envelope-fill me-2"></i> <a href="mailto:info@ejemplo.com" class="text-secondary text-decoration-none">contacto@restaurantetijuana.com</a></p>
+        <p><i class="bi bi-telephone-fill me-2"></i> <a href="tel:+34900000000" class="text-secondary text-decoration-none">626609321</a></p>
+      </div>
+    </div>
+
+    <hr class="mb-4">
+
+    <!-- Fila Inferior: Copyright -->
+    <div class="row align-items-center">
+      <div class="col-md-7 col-lg-8">
+        <p class="text-md-start text-secondary">&copy; 2026 Todos los derechos reservados por <strong class="text-primary">Gabriel E. Vela Martínez</strong></p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<br>
+<br>
+
+<br>
+
+
+    <div class="container text-center">
+        <h2 class="mb-4 text-secondary">Síguenos en nuestras redes</h2>
+        
+        <!-- Contenedor de Redes Sociales -->
+        <div class="d-flex justify-content-center gap-3">
+            
+            <!-- Facebook -->
+            <a href="https://facebook.com" target="_blank" class="btn btn-social btn-facebook" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+
+            <!-- Instagram -->
+            <a href="https://instagram.com" target="_blank" class="btn btn-social btn-instagram" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+
+            <!-- LinkedIn -->
+            <a href="https://linkedin.com" target="_blank" class="btn btn-social btn-linkedin" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+
+            <!-- Google (Gmail) -->
+            <a href="https://www.google.com/" target="_blank" class="btn btn-social btn-google" aria-label="Google">
+                <i class="fab fa-google"></i>
+            </a>
+
+            <!-- YouTube -->
+            <a href="https://youtube.com" target="_blank" class="btn btn-social btn-youtube" aria-label="YouTube">
+                <i class="fab fa-youtube"></i>
+            </a>
+
+        </div>
+    </div>
+
+
+
+
+<br>
+<br>
+
+<br>
+
+<footer>
+<h3>&copy; All Right Reserved</h3>
+</footer>
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+
+<script src="script.js"></script>
+
+
+
+
+</body>
+</html>
